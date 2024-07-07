@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2024-07-07T13:51:31.944Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="iyK2FhTxRmKTlwhUlDap" version="24.6.4" type="github" pages="6">
+<mxfile host="app.diagrams.net" modified="2024-07-07T14:04:43.659Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="GRF4l8BtExONEQa-KOqP" version="24.6.4" type="github" pages="7">
   <diagram name="General" id="_v9yUEjPOCADY9edNJY2">
     <mxGraphModel dx="1674" dy="786" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="KAbzVNdbYhZcqMZLPB_y-1" value="General Requirements" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;" vertex="1" parent="1">
-          <mxGeometry x="40" y="250" width="310" height="130" as="geometry" />
+          <mxGeometry x="90" y="340" width="310" height="130" as="geometry" />
         </mxCell>
         <mxCell id="KAbzVNdbYhZcqMZLPB_y-2" value="Daily Commits&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="KAbzVNdbYhZcqMZLPB_y-1">
           <mxGeometry y="26" width="310" height="26" as="geometry" />
@@ -20,7 +20,7 @@
           <mxGeometry y="104" width="310" height="26" as="geometry" />
         </mxCell>
         <mxCell id="0b3NAgCXMjt9PbrpH8dh-4" value="Frontend Requirements" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;" vertex="1" parent="1">
-          <mxGeometry x="360" y="250" width="310" height="78" as="geometry" />
+          <mxGeometry x="425" y="340" width="310" height="78" as="geometry" />
         </mxCell>
         <mxCell id="0b3NAgCXMjt9PbrpH8dh-5" value="&lt;div&gt;Responsive across all screen sizes&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="0b3NAgCXMjt9PbrpH8dh-4">
           <mxGeometry y="26" width="310" height="26" as="geometry" />
@@ -29,7 +29,7 @@
           <mxGeometry y="52" width="310" height="26" as="geometry" />
         </mxCell>
         <mxCell id="0b3NAgCXMjt9PbrpH8dh-9" value="Backend Requirements" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;" vertex="1" parent="1">
-          <mxGeometry x="360" y="360" width="310" height="104" as="geometry" />
+          <mxGeometry x="425" y="446" width="310" height="104" as="geometry" />
         </mxCell>
         <mxCell id="0b3NAgCXMjt9PbrpH8dh-10" value="&lt;div&gt;Authentication and Authorization&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="0b3NAgCXMjt9PbrpH8dh-9">
           <mxGeometry y="26" width="310" height="26" as="geometry" />
@@ -40,8 +40,14 @@
         <mxCell id="0b3NAgCXMjt9PbrpH8dh-12" value="One image or file upload" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="0b3NAgCXMjt9PbrpH8dh-9">
           <mxGeometry y="78" width="310" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="tipRFEiIv1D_3ed3xglJ-1" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;AidMate&lt;/span&gt;&lt;/h1&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Y&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;i&gt;our Emergency Companion&amp;nbsp;&lt;/i&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;i&gt;&lt;br&gt;&lt;/i&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;br&gt;&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="40" y="30" width="640" height="120" as="geometry" />
+        <mxCell id="Hs92BQiZqFJ-4OVfq9W--1" value="About" style="swimlane;fontSize=17;labelBackgroundColor=default;" vertex="1" parent="1">
+          <mxGeometry x="20" y="110" width="810" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="Hs92BQiZqFJ-4OVfq9W--2" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;AidMate is a&amp;nbsp; web and mobile application designed to empower you with the knowledge and tools you need to handle emergencies effectively. Whether you&#39;re at home, work, or on the go, AidMate provides easy access to essential first aid instructions and emergency services.&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;labelBackgroundColor=default;" vertex="1" parent="Hs92BQiZqFJ-4OVfq9W--1">
+          <mxGeometry x="10" y="30" width="780" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Hs92BQiZqFJ-4OVfq9W--3" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Welcome to AidMate&lt;/span&gt;&lt;br style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;/b&gt;&lt;/font&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;i&gt;Your Ultimate First Aid Companion&lt;/i&gt;&lt;/font&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="20" width="810" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
@@ -83,6 +89,17 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="PuVkffSAe6ptdI-lqt37" name="Page-7">
+    <mxGraphModel dx="824" dy="1886" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="nSbJExJbKzpzdGmyBKO5-1" value="&lt;br&gt;&lt;br&gt;&lt;br&gt;Key Features&lt;br&gt;&lt;ul&gt;&lt;li&gt;First Aid Instructions&lt;/li&gt;&lt;li&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;Access clear and concise first aid instructions for a variety of emergencies.&lt;/li&gt;&lt;li&gt;Step-by-step guides with images and videos to help you provide immediate assistance.&lt;/li&gt;&lt;li&gt;GPS Emergency Location Mapping&lt;/li&gt;&lt;li&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;Share your exact location with emergency responders at the touch of a button.&lt;/li&gt;&lt;li&gt;Ensure that help arrives quickly when you need it most.&lt;/li&gt;&lt;li&gt;Offline Access&lt;/li&gt;&lt;li&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;Download first aid instructions for use in remote areas with no internet connectivity.&lt;/li&gt;&lt;li&gt;Be prepared to assist in any situation, regardless of connectivity.&lt;/li&gt;&lt;li&gt;Multilingual Support&lt;/li&gt;&lt;li&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;Access first aid instructions in multiple languages.&lt;/li&gt;&lt;li&gt;Ensure that you and others can understand and follow the instructions accurately.&lt;/li&gt;&lt;li&gt;Emergency Contacts Notification&lt;/li&gt;&lt;li&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;Notify your pre-set emergency contacts with your location and situation.&lt;/li&gt;&lt;li&gt;Ensure your loved ones are informed and can assist or alert authorities.&lt;/li&gt;&lt;li&gt;User Profile and Medical Information&lt;/li&gt;&lt;li&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;Store and manage your personal and medical information securely.&lt;/li&gt;&lt;li&gt;Provide emergency responders with quick access to your critical health data.&lt;/li&gt;&lt;li&gt;Interactive First Aid Scenarios&lt;/li&gt;&lt;li&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;Engage in interactive scenarios and quizzes to enhance your first aid knowledge.&lt;/li&gt;&lt;li&gt;Retain crucial information and be better prepared for real-life situations.&lt;/li&gt;&lt;li&gt;Why Choose AidMate?&lt;/li&gt;&lt;li&gt;User-Friendly Interface&lt;/li&gt;&lt;li&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;Designed for ease of use, ensuring you can find the information you need quickly.&lt;/li&gt;&lt;li&gt;Intuitive navigation and clear instructions make it accessible to everyone.&lt;/li&gt;&lt;li&gt;Reliable and Up-to-Date Information&lt;/li&gt;&lt;li&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;Regular updates to ensure the latest medical guidelines are available.&lt;/li&gt;&lt;li&gt;Content reviewed and approved by medical professionals.&lt;/li&gt;&lt;li&gt;Comprehensive Support&lt;/li&gt;&lt;/ul&gt;&lt;br&gt;24/7 access to first aid information and emergency services.&lt;br&gt;Support for a wide range of medical emergencies, from minor injuries to critical situations.&lt;br&gt;Stay Safe, Stay Prepared&lt;br&gt;With AidMate, you can have peace of mind knowing that you have a reliable first aid companion at your fingertips. Equip yourself with the knowledge and tools to handle emergencies confidently and effectively. Download AidMate today and be prepared to make a difference when it matters most." style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="900" y="-20" width="560" height="830" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
