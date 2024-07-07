@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-07-07T16:05:12.141Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="IXZLqdNa4CkkyBgNNO4a" version="24.6.4" type="github" pages="9">
+<mxfile host="app.diagrams.net" modified="2024-07-07T16:06:36.843Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="NBhcvpKg-qQB1tyHtG5g" version="24.6.4" type="github" pages="9">
   <diagram name="General" id="_v9yUEjPOCADY9edNJY2">
     <mxGraphModel dx="1820" dy="737" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -62,7 +62,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="IyyFQ4RSP9UoYO-4e8pV" name="User Story">
-    <mxGraphModel dx="1927" dy="780" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1645" dy="780" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -70,42 +70,42 @@
           <mxGeometry x="25" y="10" width="800" height="170" as="geometry" />
         </mxCell>
         <mxCell id="y8HZ5NCk93fEaW_qW8cW-2" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;As an average person, I want to use the AidMate app so I can help others in emergency situations by providing first-aid quickly and efficiently.&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;labelBackgroundColor=default;" vertex="1" parent="1">
-          <mxGeometry x="150" y="100" width="550" height="110" as="geometry" />
+          <mxGeometry x="40" y="100" width="780" height="90" as="geometry" />
         </mxCell>
         <mxCell id="y8HZ5NCk93fEaW_qW8cW-3" value="BreakDown" style="shape=table;childLayout=tableLayout;startSize=40;collapsible=0;recursiveResize=0;expand=0;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="30" y="210" width="790" height="440" as="geometry" />
+          <mxGeometry x="30" y="210" width="790" height="453" as="geometry" />
         </mxCell>
         <mxCell id="y8HZ5NCk93fEaW_qW8cW-8" value="Persona" style="shape=tableRow;horizontal=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;strokeColor=inherit;bottom=0;right=0;dropTarget=0;fontStyle=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;startSize=40;collapsible=0;recursiveResize=0;expand=0;fontSize=16;" vertex="1" parent="y8HZ5NCk93fEaW_qW8cW-3">
-          <mxGeometry y="40" width="790" height="130" as="geometry" />
+          <mxGeometry y="40" width="790" height="120" as="geometry" />
         </mxCell>
         <mxCell id="y8HZ5NCk93fEaW_qW8cW-10" value="" style="swimlane;swimlaneHead=0;swimlaneBody=0;fontStyle=0;connectable=0;strokeColor=inherit;fillColor=none;startSize=0;collapsible=0;recursiveResize=0;expand=0;fontSize=16;" vertex="1" parent="y8HZ5NCk93fEaW_qW8cW-8">
-          <mxGeometry x="40" width="750" height="130" as="geometry">
-            <mxRectangle width="750" height="130" as="alternateBounds" />
+          <mxGeometry x="40" width="750" height="120" as="geometry">
+            <mxRectangle width="750" height="120" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="y8HZ5NCk93fEaW_qW8cW-12" value="Want To" style="shape=tableRow;horizontal=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;strokeColor=inherit;bottom=0;right=0;dropTarget=0;fontStyle=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;startSize=40;collapsible=0;recursiveResize=0;expand=0;fontSize=16;" vertex="1" parent="y8HZ5NCk93fEaW_qW8cW-3">
-          <mxGeometry y="170" width="790" height="140" as="geometry" />
+          <mxGeometry y="160" width="790" height="160" as="geometry" />
         </mxCell>
         <mxCell id="y8HZ5NCk93fEaW_qW8cW-14" value="" style="swimlane;swimlaneHead=0;swimlaneBody=0;fontStyle=0;connectable=0;strokeColor=inherit;fillColor=none;startSize=0;collapsible=0;recursiveResize=0;expand=0;fontSize=16;" vertex="1" parent="y8HZ5NCk93fEaW_qW8cW-12">
-          <mxGeometry x="40" width="750" height="140" as="geometry">
-            <mxRectangle width="750" height="140" as="alternateBounds" />
+          <mxGeometry x="40" width="750" height="160" as="geometry">
+            <mxRectangle width="750" height="160" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="y8HZ5NCk93fEaW_qW8cW-19" value="Provide clear, concise, and step-by-step instructions for a wide range of emergency situations.&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Types of Emergency Instructions:&lt;/div&gt;&lt;div&gt;Directions to the Emergency Room&amp;nbsp;&amp;nbsp;&lt;br&gt;Choking -&amp;gt; Heimlich&amp;nbsp;&lt;/div&gt;&lt;div&gt;Unresponsive -&amp;gt; CPR&lt;/div&gt;&lt;div&gt;Burn -&amp;gt; Cool and Cover&lt;/div&gt;&lt;div&gt;Bleeding -&amp;gt; Clean, Tunicate, Emergency Room&lt;/div&gt;&lt;div&gt;ETC.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="y8HZ5NCk93fEaW_qW8cW-14">
-          <mxGeometry x="30" y="30" width="700" height="90" as="geometry" />
+        <mxCell id="y8HZ5NCk93fEaW_qW8cW-19" value="Provide clear, concise, and step-by-step instructions for a wide range of emergency situations.&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;br style=&quot;font-size: 14px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;Types of Emergency Instructions:&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;Directions to the Emergency Room&amp;nbsp;&amp;nbsp;&lt;br style=&quot;font-size: 14px;&quot;&gt;Choking -&amp;gt; Heimlich&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;Unresponsive -&amp;gt; CPR&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;Burn -&amp;gt; Cool and Cover&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;Bleeding -&amp;gt; Clean, Tunicate, Emergency Room&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;ETC.&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;br style=&quot;font-size: 14px;&quot;&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="y8HZ5NCk93fEaW_qW8cW-14">
+          <mxGeometry x="30" y="44" width="700" height="90" as="geometry" />
         </mxCell>
         <mxCell id="y8HZ5NCk93fEaW_qW8cW-16" value="So That" style="shape=tableRow;horizontal=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;strokeColor=inherit;bottom=0;right=0;dropTarget=0;fontStyle=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;startSize=40;collapsible=0;recursiveResize=0;expand=0;fontSize=16;" vertex="1" parent="y8HZ5NCk93fEaW_qW8cW-3">
-          <mxGeometry y="310" width="790" height="130" as="geometry" />
+          <mxGeometry y="320" width="790" height="133" as="geometry" />
         </mxCell>
         <mxCell id="y8HZ5NCk93fEaW_qW8cW-17" style="swimlane;swimlaneHead=0;swimlaneBody=0;fontStyle=0;connectable=0;strokeColor=inherit;fillColor=none;startSize=0;collapsible=0;recursiveResize=0;expand=0;fontSize=16;" vertex="1" parent="y8HZ5NCk93fEaW_qW8cW-16">
-          <mxGeometry x="40" width="750" height="130" as="geometry">
-            <mxRectangle width="750" height="130" as="alternateBounds" />
+          <mxGeometry x="40" width="750" height="133" as="geometry">
+            <mxRectangle width="750" height="133" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="y8HZ5NCk93fEaW_qW8cW-20" value="Users can act quickly and effectively to bridge the gap between witnessing an emergency and professional medical help arriving, enabling users to make a positive impact during critical moments.&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Possible Outcomes:&lt;/div&gt;&lt;div&gt;Medical professional arrives - afflicted person is stable and ready for professional aid&lt;/div&gt;&lt;div&gt;Emergency is resolved (Not choking, responsive)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="y8HZ5NCk93fEaW_qW8cW-17">
+        <mxCell id="y8HZ5NCk93fEaW_qW8cW-20" value="Users can act quickly and effectively to bridge the gap between witnessing an emergency and professional medical help arriving, enabling users to make a positive impact during critical moments.&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;br style=&quot;font-size: 14px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;Possible Outcomes:&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;Medical professional arrives - afflicted person is stable and ready for professional aid&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;Emergency is resolved (Not choking, responsive)&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;br style=&quot;font-size: 14px;&quot;&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="y8HZ5NCk93fEaW_qW8cW-17">
           <mxGeometry x="30" y="30" width="700" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="y8HZ5NCk93fEaW_qW8cW-18" value="Anyone who can use a mobile phone or website and is capable of providing hands-on assistance.&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ages: Young Adults, Teens, Adults, Older Children, Elderly&lt;/div&gt;&lt;div&gt;Occupation: Any&lt;/div&gt;&lt;div&gt;Technology Proficiency: Basic+&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="y8HZ5NCk93fEaW_qW8cW-18" value="Anyone who can use a mobile phone or website and is capable of providing hands-on assistance.&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;br style=&quot;font-size: 14px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;Ages: Young Adults, Teens, Adults, Older Children, Elderly&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;Occupation: Any&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;Technology Proficiency: Basic+&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
           <mxGeometry x="100" y="270" width="700" height="90" as="geometry" />
         </mxCell>
         <mxCell id="6FSMNmG6Xc1Va60B7Q4_-5" value="&lt;h1 style=&quot;forced-color-adjust: none; margin-top: 0px; font-size: 16px;&quot;&gt;&lt;u style=&quot;forced-color-adjust: none; font-size: 16px;&quot;&gt;Sara&lt;/u&gt;&lt;/h1&gt;&lt;div style=&quot;forced-color-adjust: none; font-size: 16px;&quot;&gt;&lt;div style=&quot;forced-color-adjust: none; font-size: 16px;&quot;&gt;&lt;font style=&quot;forced-color-adjust: none; font-size: 16px;&quot;&gt;Sarah, a busy parent who often cooks meals for her family, is preparing dinner in the kitchen when her young child accidentally touches a hot pan and gets a burn.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;forced-color-adjust: none; font-size: 16px;&quot;&gt;&lt;font style=&quot;forced-color-adjust: none; font-size: 16px;&quot;&gt;&lt;br style=&quot;forced-color-adjust: none; font-size: 16px;&quot;&gt;-In need of immediate first aid guidance, Sarah quickly opens the first aid app on her phone.&lt;br style=&quot;forced-color-adjust: none; font-size: 16px;&quot;&gt;-She selects the &quot;Burns&quot; category from the main menu, which provides her with a clear, step-by-step guide complete with&lt;span style=&quot;forced-color-adjust: none; white-space: pre; font-size: 16px;&quot;&gt;&lt;span style=&quot;white-space: pre; font-size: 16px;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;visuals and text.&lt;br style=&quot;forced-color-adjust: none; font-size: 16px;&quot;&gt;-Following the app’s instructions, Sarah cools the burn under running water, covers it with a sterile bandage, and manages her child’s pain.&lt;br style=&quot;forced-color-adjust: none; font-size: 16px;&quot;&gt;&lt;br style=&quot;forced-color-adjust: none; font-size: 16px;&quot;&gt;Thanks to the app, Sarah successfully administers first aid, feeling confident and reassured by its guidance. Her child’s pain is alleviated, and the burn is properly treated, reducing the risk of complications. The app’s ease of navigation and quick access to information proves invaluable in this stressful moment.&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;align=center;" vertex="1" parent="1">
