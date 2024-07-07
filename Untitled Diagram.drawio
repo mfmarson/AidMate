@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-07-07T14:04:43.659Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="GRF4l8BtExONEQa-KOqP" version="24.6.4" type="github" pages="7">
+<mxfile host="app.diagrams.net" modified="2024-07-07T14:47:45.546Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="WxNMs6ufCrq18DVKoiKC" version="24.6.4" type="github" pages="7">
   <diagram name="General" id="_v9yUEjPOCADY9edNJY2">
     <mxGraphModel dx="1674" dy="786" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -60,6 +60,55 @@
       </root>
     </mxGraphModel>
   </diagram>
+  <diagram id="PuVkffSAe6ptdI-lqt37" name="Features">
+    <mxGraphModel dx="1638" dy="663" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Sb_wLlNEOUAFuI__QWkG-5" value="AidMate Features" style="shape=table;childLayout=tableLayout;startSize=30;collapsible=0;recursiveResize=0;expand=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="60" y="20" width="930" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="Sb_wLlNEOUAFuI__QWkG-6" value="USER" style="shape=tableRow;horizontal=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;strokeColor=inherit;bottom=0;right=0;dropTarget=0;fontStyle=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;startSize=40;collapsible=0;recursiveResize=0;expand=0;fontSize=16;" vertex="1" parent="Sb_wLlNEOUAFuI__QWkG-5">
+          <mxGeometry y="30" width="930" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="Sb_wLlNEOUAFuI__QWkG-7" value="MVP" style="swimlane;swimlaneHead=0;swimlaneBody=0;fontStyle=0;strokeColor=inherit;connectable=0;fillColor=none;startSize=40;collapsible=0;recursiveResize=0;expand=0;fontSize=16;" vertex="1" parent="Sb_wLlNEOUAFuI__QWkG-6">
+          <mxGeometry x="40" width="447" height="220" as="geometry">
+            <mxRectangle width="447" height="220" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sb_wLlNEOUAFuI__QWkG-18" value="&lt;ul&gt;&lt;li&gt;Login/User Profile&lt;/li&gt;&lt;li&gt;911 Call Option&lt;/li&gt;&lt;li&gt;GPS / Emergency Directions&amp;nbsp;&lt;/li&gt;&lt;li&gt;FirstAid Prompts&lt;/li&gt;&lt;li&gt;FirstAid Search Feature&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;" vertex="1" parent="Sb_wLlNEOUAFuI__QWkG-7">
+          <mxGeometry y="70" width="410" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Sb_wLlNEOUAFuI__QWkG-8" value="Full Features" style="swimlane;swimlaneHead=0;swimlaneBody=0;fontStyle=0;strokeColor=inherit;connectable=0;fillColor=none;startSize=40;collapsible=0;recursiveResize=0;expand=0;fontSize=16;" vertex="1" parent="Sb_wLlNEOUAFuI__QWkG-6">
+          <mxGeometry x="487" width="443" height="220" as="geometry">
+            <mxRectangle width="443" height="220" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sb_wLlNEOUAFuI__QWkG-19" value="&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Emergency contact automatic alerts&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Offline Availability&amp;nbsp;&lt;/li&gt;&lt;li&gt;Multi-Lingual&lt;/li&gt;&lt;li&gt;Share Location - EMS, Contacts, ETC.&lt;/li&gt;&lt;li&gt;Medical information storage in profile (?)&lt;/li&gt;&lt;li&gt;Resources for further education&amp;nbsp;&lt;/li&gt;&lt;li&gt;Downloadable Content&amp;nbsp;&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;" vertex="1" parent="Sb_wLlNEOUAFuI__QWkG-8">
+          <mxGeometry x="103" y="40" width="277" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="cho3BdvPA1NdPnx8K4Mt-1" value="FirstAid Video Database" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.octagon2;align=center;verticalAlign=middle;dx=15;" vertex="1" parent="Sb_wLlNEOUAFuI__QWkG-8">
+          <mxGeometry x="-67" y="60" width="130" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Sb_wLlNEOUAFuI__QWkG-10" value="CLIENT" style="shape=tableRow;horizontal=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;strokeColor=inherit;bottom=0;right=0;dropTarget=0;fontStyle=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;startSize=40;collapsible=0;recursiveResize=0;expand=0;fontSize=16;" vertex="1" parent="Sb_wLlNEOUAFuI__QWkG-5">
+          <mxGeometry y="250" width="930" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="Sb_wLlNEOUAFuI__QWkG-11" value="" style="swimlane;swimlaneHead=0;swimlaneBody=0;fontStyle=0;connectable=0;strokeColor=inherit;fillColor=none;startSize=0;collapsible=0;recursiveResize=0;expand=0;fontSize=16;" vertex="1" parent="Sb_wLlNEOUAFuI__QWkG-10">
+          <mxGeometry x="40" width="447" height="170" as="geometry">
+            <mxRectangle width="447" height="170" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sb_wLlNEOUAFuI__QWkG-21" value="&lt;ul&gt;&lt;li&gt;Value 1&lt;/li&gt;&lt;li&gt;Value 2&lt;/li&gt;&lt;li&gt;Value 3&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;" vertex="1" parent="Sb_wLlNEOUAFuI__QWkG-11">
+          <mxGeometry y="33" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Sb_wLlNEOUAFuI__QWkG-12" value="" style="swimlane;swimlaneHead=0;swimlaneBody=0;fontStyle=0;connectable=0;strokeColor=inherit;fillColor=none;startSize=0;collapsible=0;recursiveResize=0;expand=0;fontSize=16;" vertex="1" parent="Sb_wLlNEOUAFuI__QWkG-10">
+          <mxGeometry x="487" width="443" height="170" as="geometry">
+            <mxRectangle width="443" height="170" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
   <diagram id="2SY-VN7n29lrQ3tU3jqq" name="Tech Stack">
     <mxGraphModel dx="1674" dy="786" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -84,21 +133,31 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="9XNXmWX4rTdEHZAN47G7" name="Questions">
-    <mxGraphModel dx="1674" dy="786" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+  <diagram id="9XNXmWX4rTdEHZAN47G7" name="BrainBox">
+    <mxGraphModel dx="1638" dy="663" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-      </root>
-    </mxGraphModel>
-  </diagram>
-  <diagram id="PuVkffSAe6ptdI-lqt37" name="Page-7">
-    <mxGraphModel dx="824" dy="1886" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-        <mxCell id="nSbJExJbKzpzdGmyBKO5-1" value="&lt;br&gt;&lt;br&gt;&lt;br&gt;Key Features&lt;br&gt;&lt;ul&gt;&lt;li&gt;First Aid Instructions&lt;/li&gt;&lt;li&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;Access clear and concise first aid instructions for a variety of emergencies.&lt;/li&gt;&lt;li&gt;Step-by-step guides with images and videos to help you provide immediate assistance.&lt;/li&gt;&lt;li&gt;GPS Emergency Location Mapping&lt;/li&gt;&lt;li&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;Share your exact location with emergency responders at the touch of a button.&lt;/li&gt;&lt;li&gt;Ensure that help arrives quickly when you need it most.&lt;/li&gt;&lt;li&gt;Offline Access&lt;/li&gt;&lt;li&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;Download first aid instructions for use in remote areas with no internet connectivity.&lt;/li&gt;&lt;li&gt;Be prepared to assist in any situation, regardless of connectivity.&lt;/li&gt;&lt;li&gt;Multilingual Support&lt;/li&gt;&lt;li&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;Access first aid instructions in multiple languages.&lt;/li&gt;&lt;li&gt;Ensure that you and others can understand and follow the instructions accurately.&lt;/li&gt;&lt;li&gt;Emergency Contacts Notification&lt;/li&gt;&lt;li&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;Notify your pre-set emergency contacts with your location and situation.&lt;/li&gt;&lt;li&gt;Ensure your loved ones are informed and can assist or alert authorities.&lt;/li&gt;&lt;li&gt;User Profile and Medical Information&lt;/li&gt;&lt;li&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;Store and manage your personal and medical information securely.&lt;/li&gt;&lt;li&gt;Provide emergency responders with quick access to your critical health data.&lt;/li&gt;&lt;li&gt;Interactive First Aid Scenarios&lt;/li&gt;&lt;li&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;Engage in interactive scenarios and quizzes to enhance your first aid knowledge.&lt;/li&gt;&lt;li&gt;Retain crucial information and be better prepared for real-life situations.&lt;/li&gt;&lt;li&gt;Why Choose AidMate?&lt;/li&gt;&lt;li&gt;User-Friendly Interface&lt;/li&gt;&lt;li&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;Designed for ease of use, ensuring you can find the information you need quickly.&lt;/li&gt;&lt;li&gt;Intuitive navigation and clear instructions make it accessible to everyone.&lt;/li&gt;&lt;li&gt;Reliable and Up-to-Date Information&lt;/li&gt;&lt;li&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;Regular updates to ensure the latest medical guidelines are available.&lt;/li&gt;&lt;li&gt;Content reviewed and approved by medical professionals.&lt;/li&gt;&lt;li&gt;Comprehensive Support&lt;/li&gt;&lt;/ul&gt;&lt;br&gt;24/7 access to first aid information and emergency services.&lt;br&gt;Support for a wide range of medical emergencies, from minor injuries to critical situations.&lt;br&gt;Stay Safe, Stay Prepared&lt;br&gt;With AidMate, you can have peace of mind knowing that you have a reliable first aid companion at your fingertips. Equip yourself with the knowledge and tools to handle emergencies confidently and effectively. Download AidMate today and be prepared to make a difference when it matters most." style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="900" y="-20" width="560" height="830" as="geometry" />
+        <mxCell id="P_y41gLa8nmm3g46R4ns-2" value="Questions" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="20" width="360" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="P_y41gLa8nmm3g46R4ns-4" value="What is the point of having a profile? other than it&#39;s needed for the assignment?&amp;nbsp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="P_y41gLa8nmm3g46R4ns-2">
+          <mxGeometry y="30" width="360" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="P_y41gLa8nmm3g46R4ns-5" value="Item 3" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="P_y41gLa8nmm3g46R4ns-2">
+          <mxGeometry y="60" width="360" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="P_y41gLa8nmm3g46R4ns-6" value="Thoughts" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="20" width="410" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="P_y41gLa8nmm3g46R4ns-7" value="Item 1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="P_y41gLa8nmm3g46R4ns-6">
+          <mxGeometry y="30" width="410" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="P_y41gLa8nmm3g46R4ns-8" value="Item 2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="P_y41gLa8nmm3g46R4ns-6">
+          <mxGeometry y="60" width="410" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="P_y41gLa8nmm3g46R4ns-9" value="Item 3" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="P_y41gLa8nmm3g46R4ns-6">
+          <mxGeometry y="90" width="410" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
