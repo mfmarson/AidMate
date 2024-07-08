@@ -1,6 +1,86 @@
-<mxfile host="app.diagrams.net" modified="2024-07-07T16:07:53.264Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="EiT7Oc7lsUcI3RFPHQkV" version="24.6.4" type="github" pages="9">
+<mxfile host="app.diagrams.net" modified="2024-07-08T13:42:23.995Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="cE1ONJODWYbEKVDtyyxc" version="24.6.4" type="github" pages="11">
+  <diagram id="_bRJtQX3eozwaCFUhSWZ" name="Project Log">
+    <mxGraphModel dx="954" dy="606" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pLReuP61BOi9FfTVCXyM-25" value="" style="childLayout=tableLayout;recursiveResize=0;shadow=0;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="40" y="190" width="680" height="289" as="geometry" />
+        </mxCell>
+        <mxCell id="pLReuP61BOi9FfTVCXyM-26" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;dropTarget=0;collapsible=0;recursiveResize=0;expand=0;fontStyle=0;fillColor=none;strokeColor=inherit;" vertex="1" parent="pLReuP61BOi9FfTVCXyM-25">
+          <mxGeometry width="680" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="pLReuP61BOi9FfTVCXyM-27" value="Date" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=#45BBFF;align=center;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="pLReuP61BOi9FfTVCXyM-26">
+          <mxGeometry width="171" height="50" as="geometry">
+            <mxRectangle width="171" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pLReuP61BOi9FfTVCXyM-28" value="Did Yesterday" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=#45BBFF;align=center;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="pLReuP61BOi9FfTVCXyM-26">
+          <mxGeometry x="171" width="169" height="50" as="geometry">
+            <mxRectangle width="169" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pLReuP61BOi9FfTVCXyM-29" value="Doing Today" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=#45BBFF;align=center;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="pLReuP61BOi9FfTVCXyM-26">
+          <mxGeometry x="340" width="171" height="50" as="geometry">
+            <mxRectangle width="171" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pLReuP61BOi9FfTVCXyM-42" value="Stuck" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=#45BBFF;align=center;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="pLReuP61BOi9FfTVCXyM-26">
+          <mxGeometry x="511" width="169" height="50" as="geometry">
+            <mxRectangle width="169" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pLReuP61BOi9FfTVCXyM-30" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;dropTarget=0;collapsible=0;recursiveResize=0;expand=0;fontStyle=0;fillColor=none;strokeColor=inherit;" vertex="1" parent="pLReuP61BOi9FfTVCXyM-25">
+          <mxGeometry y="50" width="680" height="118" as="geometry" />
+        </mxCell>
+        <mxCell id="pLReuP61BOi9FfTVCXyM-31" value="Monday July 8&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" vertex="1" parent="pLReuP61BOi9FfTVCXyM-30">
+          <mxGeometry width="171" height="118" as="geometry">
+            <mxRectangle width="171" height="118" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pLReuP61BOi9FfTVCXyM-32" value="Created User Stories&lt;div&gt;Started Features Phases&lt;/div&gt;&lt;div&gt;Researched common first aid&lt;/div&gt;" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" vertex="1" parent="pLReuP61BOi9FfTVCXyM-30">
+          <mxGeometry x="171" width="169" height="118" as="geometry">
+            <mxRectangle width="169" height="118" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pLReuP61BOi9FfTVCXyM-33" value="App Workflow&lt;div&gt;Neon/Supabase Research&lt;/div&gt;&lt;div&gt;Add training story&lt;/div&gt;" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=#CC0066;align=center;whiteSpace=wrap;html=1;" vertex="1" parent="pLReuP61BOi9FfTVCXyM-30">
+          <mxGeometry x="340" width="171" height="118" as="geometry">
+            <mxRectangle width="171" height="118" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pLReuP61BOi9FfTVCXyM-43" value="NADA!&amp;nbsp;" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" vertex="1" parent="pLReuP61BOi9FfTVCXyM-30">
+          <mxGeometry x="511" width="169" height="118" as="geometry">
+            <mxRectangle width="169" height="118" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pLReuP61BOi9FfTVCXyM-34" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;dropTarget=0;collapsible=0;recursiveResize=0;expand=0;fontStyle=0;fillColor=none;strokeColor=inherit;" vertex="1" parent="pLReuP61BOi9FfTVCXyM-25">
+          <mxGeometry y="168" width="680" height="121" as="geometry" />
+        </mxCell>
+        <mxCell id="pLReuP61BOi9FfTVCXyM-35" value="Value 7" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" vertex="1" parent="pLReuP61BOi9FfTVCXyM-34">
+          <mxGeometry width="171" height="121" as="geometry">
+            <mxRectangle width="171" height="121" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pLReuP61BOi9FfTVCXyM-36" value="Value 8" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" vertex="1" parent="pLReuP61BOi9FfTVCXyM-34">
+          <mxGeometry x="171" width="169" height="121" as="geometry">
+            <mxRectangle width="169" height="121" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pLReuP61BOi9FfTVCXyM-37" value="Value 9" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" vertex="1" parent="pLReuP61BOi9FfTVCXyM-34">
+          <mxGeometry x="340" width="171" height="121" as="geometry">
+            <mxRectangle width="171" height="121" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pLReuP61BOi9FfTVCXyM-44" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" vertex="1" parent="pLReuP61BOi9FfTVCXyM-34">
+          <mxGeometry x="511" width="169" height="121" as="geometry">
+            <mxRectangle width="169" height="121" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
   <diagram name="General" id="_v9yUEjPOCADY9edNJY2">
-    <mxGraphModel dx="1553" dy="737" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1003" dy="521" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -169,6 +249,14 @@
       </root>
     </mxGraphModel>
   </diagram>
+  <diagram id="4MDYOb8dO-chjCcZMJel" name="App Flow">
+    <mxGraphModel dx="1311" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
   <diagram id="2SY-VN7n29lrQ3tU3jqq" name="Tech Stack">
     <mxGraphModel dx="1674" dy="786" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -215,30 +303,27 @@
     </mxGraphModel>
   </diagram>
   <diagram id="9XNXmWX4rTdEHZAN47G7" name="BrainBox">
-    <mxGraphModel dx="1638" dy="663" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="954" dy="606" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="P_y41gLa8nmm3g46R4ns-2" value="Questions" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="20" y="20" width="360" height="90" as="geometry" />
+          <mxGeometry x="20" y="20" width="360" height="130" as="geometry" />
         </mxCell>
         <mxCell id="P_y41gLa8nmm3g46R4ns-4" value="What is the point of having a profile? other than it&#39;s needed for the assignment?&amp;nbsp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="P_y41gLa8nmm3g46R4ns-2">
-          <mxGeometry y="30" width="360" height="30" as="geometry" />
+          <mxGeometry y="30" width="360" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="P_y41gLa8nmm3g46R4ns-5" value="Item 3" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="P_y41gLa8nmm3g46R4ns-2">
-          <mxGeometry y="60" width="360" height="30" as="geometry" />
+        <mxCell id="P_y41gLa8nmm3g46R4ns-5" value="If I were to want to have my portfolio live for Demo day how would one go about doing that?&amp;nbsp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="P_y41gLa8nmm3g46R4ns-2">
+          <mxGeometry y="70" width="360" height="60" as="geometry" />
         </mxCell>
         <mxCell id="P_y41gLa8nmm3g46R4ns-6" value="Thoughts" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="420" y="20" width="410" height="120" as="geometry" />
+          <mxGeometry x="420" y="20" width="410" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="P_y41gLa8nmm3g46R4ns-7" value="Item 1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="P_y41gLa8nmm3g46R4ns-6">
+        <mxCell id="P_y41gLa8nmm3g46R4ns-7" value="Level up-- use screen reader" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="P_y41gLa8nmm3g46R4ns-6">
           <mxGeometry y="30" width="410" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="P_y41gLa8nmm3g46R4ns-8" value="Item 2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="P_y41gLa8nmm3g46R4ns-6">
+        <mxCell id="P_y41gLa8nmm3g46R4ns-8" value="Add a user that wants to be prepared instead of &quot;in the emergency&quot; --- login for dashboard of &quot;favorites&quot;&amp;nbsp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="P_y41gLa8nmm3g46R4ns-6">
           <mxGeometry y="60" width="410" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="P_y41gLa8nmm3g46R4ns-9" value="Item 3" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="P_y41gLa8nmm3g46R4ns-6">
-          <mxGeometry y="90" width="410" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
