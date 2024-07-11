@@ -23,12 +23,3 @@ const SignOut = () => {
 
 export default SignOut;
 
-// const Logout = () => {
-//   return (
-//     <button type="button" onClick={"/"}>
-//       LOGOUT
-//     </button>
-//   );
-// };
-
-// export default Logout;

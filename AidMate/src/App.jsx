@@ -1,6 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { useAuth , AuthProvider } from "../AuthContext";
-
+import {  AuthProvider } from "./routes/AuthContext";
 
 import Layout from "./pages/Layout";
 import Error from "./pages/Error";
@@ -18,14 +17,6 @@ import Bleeding from "./routes/Bleeding";
 import CPR from "./routes/CPR";
 import Burns from "./routes/Burns";
 import Choking from "./routes/Choking";
-
-const App = () => (
-  <Router>
-    <AuthProvider>
-      
-    </AuthProvider>
-  </Router>
-)
 
 const router = createBrowserRouter([
   {
@@ -93,7 +84,11 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <AuthProvider>
+      <RouterProvider router={router}></RouterProvider>
+    </AuthProvider>
+  );
 }
 
 export default App;
