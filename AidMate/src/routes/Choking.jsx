@@ -1,4 +1,4 @@
-const Cards = () => {
+const Choking = () => {
   return (
     <>
       <button type="button">CALL 911</button>
@@ -15,5 +15,4 @@ const Cards = () => {
   );
 };
 
-
-export default Cards;
+export default Choking;

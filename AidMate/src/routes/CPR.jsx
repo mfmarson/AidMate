@@ -1,4 +1,4 @@
-const Cards = () => {
+const CPR = () => {
   return (
     <>
       <button type="button">CALL 911</button>
@@ -15,5 +15,5 @@ const Cards = () => {
   );
 };
 
-
-export default Cards;
+// eslint-disable-next-line react-refresh/only-export-components
+export default CPR;
