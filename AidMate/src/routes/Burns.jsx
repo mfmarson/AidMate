@@ -3,12 +3,12 @@ const Burns = () => {
     <>
       <div className="emergencyButtons">
         <button type="button">CALL 911</button>
-        <button type="button">My Location</button>
+      
         <button type="button">Emergency Room Near Me</button>
       </div>
-      <nav>Burns</nav>
+      <nav className="FirstAidName">Burns</nav>
       <div>
-        <ul>
+        <ul className="stepsList">
           <li>
             Cool the Burn: Run cool (not cold) water over the burn for at least
             10 minutes.
@@ -26,10 +26,13 @@ const Burns = () => {
         </ul>
       </div>
 
-      <button type="button">Hear Instructions</button>
+      <button className="hearButton" type="button">
+        Hear Instructions
+      </button>
       <div>
-        <button type="button">Add to Favorites</button>
-        <a href="">Download</a>
+        <button className="favoritesButton" type="button">
+          Add to Favorites
+        </button>
       </div>
     </>
   );

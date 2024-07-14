@@ -3,12 +3,12 @@ const Bleeding = () => {
     <>
       <div className="emergencyButtons">
         <button type="button">CALL 911</button>
-        <button type="button">My Location</button>
+       
         <button type="button">Emergency Room Near Me</button>
       </div>
-      <nav>Bleeding</nav>
+      <nav className="FirstAidName">Bleeding</nav>
       <div>
-        <ul>
+        <ul className="stepsList">
           <li>
             Apply Pressure: Use a clean cloth or bandage to apply firm pressure
             to the wound.
@@ -26,10 +26,9 @@ const Bleeding = () => {
           </li>
         </ul>
       </div>
-      <button type="button">Hear Instructions</button>
+      <button className="hearButton" type="button">Hear Instructions</button>
       <div>
-        <button type="button">Add to Favorites</button>
-        <a href="">Download</a>
+        <button className="favoritesButton" type="button">Add to Favorites</button>
       </div>
     </>
   );

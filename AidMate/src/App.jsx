@@ -1,5 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import {  AuthProvider } from "./routes/AuthContext";
+import { AuthProvider } from "./routes/AuthContext";
 
 import Layout from "./pages/Layout";
 import Error from "./pages/Error";
@@ -8,24 +8,34 @@ import Login from "./routes/Login";
 import Logout from "./routes/Logout";
 import Register from "./routes/Register";
 import Search from "./routes/Search";
-import Cards from "./routes/Cards";
+// import Cards from "./routes/Cards";
 import Response from "./routes/Response";
-import About from "./routes/About";
 import Contact from "./routes/Contact";
-import User from "./routes/User";
+import User from "./routes/Dashboard";
 import Bleeding from "./routes/Bleeding";
 import CPR from "./routes/CPR";
 import Burns from "./routes/Burns";
 import Choking from "./routes/Choking";
+import Landing from "./pages/Landing";
+import Dropdown from "./components/Dropdown";
+import Dashboard from "./routes/Dashboard";
 
 const router = createBrowserRouter([
   {
-    element: <Layout />,
+    path: "/",
+    element: <Landing />,
     errorElement: <Error />,
+  },
+  {
+    element: <Layout />,
     children: [
       {
-        path: "/",
+        path: "home",
         element: <Home />,
+      },
+      {
+        path: "/Dropdown",
+        element: <Dropdown />,
       },
       {
         path: "/Login",
@@ -35,10 +45,10 @@ const router = createBrowserRouter([
         path: "/Logout",
         element: <Logout />,
       },
-      {
-        path: "/Cards",
-        element: <Cards />,
-      },
+      // {
+      //   path: "/Cards",
+      //   element: <Cards />,
+      // },
       {
         path: "/Search",
         element: <Search />,
@@ -52,16 +62,16 @@ const router = createBrowserRouter([
         element: <Response />,
       },
       {
-        path: "/About",
-        element: <About />,
-      },
-      {
         path: "/Contact",
         element: <Contact />,
       },
       {
         path: "/User",
         element: <User />,
+      },
+      {
+        path:'/Dashboard',
+        element: <Dashboard/>,
       },
       {
         path: "/Bleeding",

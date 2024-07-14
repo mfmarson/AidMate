@@ -1,19 +1,21 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+import Dropdown from "../components/Dropdown";
 
 const Layout = () => {
+  const options = [
+    { value: "/home", label: "Home" },
+    { value: "./Contact", label: "Contact Us" },
+    { value: "./Logout", label: "Logout" },
+    { value: "./User", label: "Dashboard" },
+    { value: "./Search", label: "Search First Aid" },
+  ];
+
   return (
     <>
-      <nav>
+      <header>
         <img src="./AidMateLogo.jpeg" alt="Logo" />
-        <h1>AidMate</h1>
-        <ul className="homeLinks">
-          <Link to="./">Home</Link>
-          <Link to="./About">About</Link>
-          <Link to="./Contact">Contact Us</Link>
-          <Link to="./Logout">Logout</Link>
-          <Link to="./User">Dashboard</Link>
-        </ul>
-      </nav>
+        <Dropdown options={options} />
+      </header>
       <div>
         <p>
           <strong>Important Notice:</strong> This app provides first aid

@@ -15,11 +15,13 @@ const SignOut = () => {
   };
 
   return (
-    <button onClick={handleSignOut} className="button">
-      Logout
-    </button>
+    <>
+      <h1>Thank you for using AidMate</h1>
+      <button onClick={handleSignOut} className="button">
+        Logout
+      </button>
+    </>
   );
 };
 
 export default SignOut;
-
