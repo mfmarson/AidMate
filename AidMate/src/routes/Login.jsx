@@ -18,11 +18,6 @@ const SignIn = () => {
     }
   };
 
-  useEffect(() => {
-    if (session) {
-      navigate("/");
-    }
-  }, [session, navigate]);
 
   return (
     <>

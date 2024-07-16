@@ -21,6 +21,7 @@ const ResponsiveComponent = () => {
 
   return (
     <Container>
+     
       {isDesktopOrLaptop}
       {isTabletOrMobile}
     </Container>

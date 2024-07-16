@@ -33,7 +33,7 @@ const Layout = () => {
           go to the nearest hospital immediately.
         </p>
       </div>
-     
+
       <Outlet />
     </>
   );

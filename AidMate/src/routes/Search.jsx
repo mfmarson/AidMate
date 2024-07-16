@@ -8,8 +8,9 @@ const Search = () => {
       <button onClick={() => (window.location.href = `tel:${phoneNumber}`)}>
         CALL 911
       </button>
-
-      <button type="button">Emergency Room Near Me</button>
+  
+        <button type="button">Emergency Room Near Me</button>
+    
       <div>
         <h1>SELECT FIRST AID INSTRUCTIONS BELOW</h1>
         <Link to="/CPR">

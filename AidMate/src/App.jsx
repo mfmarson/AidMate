@@ -3,7 +3,7 @@ import { AuthProvider } from "./routes/AuthContext";
 
 import Layout from "./pages/Layout";
 import Error from "./pages/Error";
-import Home from "./routes/Home"; 
+import Home from "./routes/Home";
 import Login from "./routes/Login";
 import Logout from "./routes/Logout";
 import Register from "./routes/Register";
@@ -25,10 +25,9 @@ const router = createBrowserRouter([
     element: <Layout />,
     errorElement: <Error />,
     children: [
-
       {
         path: "Home",
-        element: <Home />, 
+        element: <Home />,
       },
       {
         path: "Dropdown",
