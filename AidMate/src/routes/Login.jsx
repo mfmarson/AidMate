@@ -44,7 +44,7 @@ const SignIn = () => {
         </Link>
       </form>
 
-      <Link to="/Register">Register</Link>
+      <Link to="/Register">Register Here!</Link>
     </>
   );
 };

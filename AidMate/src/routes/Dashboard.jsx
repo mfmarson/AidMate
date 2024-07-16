@@ -4,22 +4,18 @@ import { supabase } from "../supabaseConfig";
 const fetchUserFavorites = async (userId) => {
   try {
     const { data, error } = await supabase.from("favorites").select(
-      `
-        instruction_id,
-        aid_instructions (
+      `id, user_id, instruction_id, aid_instructions (
+
           id,
           name,
           steps
-        )
-        `
+        )`
     );
-
     if (error) {
       throw error;
     }
 
     const filteredData = data.filter((favorite) => favorite.user_id === userId);
-
     return filteredData;
   } catch (error) {
     console.error("Error fetching user favorites:", error);
@@ -40,18 +36,19 @@ const Dashboard = ({ userId }) => {
   }, [userId]);
 
   return (
-    <div>
-      <h1>Dashboard</h1>
-      <h2>Your Favorites</h2>
-      <ul>
-        {favorites.map((favorite) => (
-          <li key={favorite.aid_instructions.id}>
-            <h3>{favorite.aid_instructions.name}</h3>
-            <p>{favorite.aid_instructions.steps}</p>
+    <>
+      <h1>DASHBOARD</h1>
+      <div>
+        <h2>Favorites</h2>
+
+        {favorites.map((filteredData) => (
+          <li key={filteredData.aid_instructions.id}>
+            <h3>{filteredData.aid_instructions.name}</h3>
+            <p>{filteredData.aid_instructions.steps}</p>
           </li>
         ))}
-      </ul>
-    </div>
+      </div>
+    </>
   );
 };
 

@@ -16,15 +16,11 @@ export const AuthProvider = ({ children }) => {
 
     getSession();
 
-    const { data: authListener } = supabase.auth.onAuthStateChange(
-      (_event, session) => {
-        setSession(session);
-      }
-    );
-
-    return () => {
-      authListener.subscription.unsubscribe();
-    };
+    // const { data } = supabase.auth.onAuthStateChange(
+    //   (_event, session) => {
+    //     setSession(session);
+    //   }
+    // );
   }, []);
 
   const signUp = async (email, password) => {
