@@ -1,52 +1,59 @@
 import { useEffect, useState } from "react";
 import { supabase } from "../supabaseConfig";
 
-const fetchUserFavorites = async (userId) => {
+const fetchUserFavorites = async (user_id) => {
   try {
-    const { data, error } = await supabase.from("favorites").select(
-      `id, user_id, instruction_id, aid_instructions (
-
+    console.log("Fetching favorites for user:", user_id);
+    const { data, error } = await supabase
+      .from("favorites")
+      .select(
+        `
+        instruction_id,
+        aid_instructions (
           id,
           name,
           steps
         )`
-    );
+      )
+      .eq("user_id", user_id);
     if (error) {
       throw error;
     }
 
-    const filteredData = data.filter((favorite) => favorite.user_id === userId);
-    return filteredData;
+    return data;
   } catch (error) {
     console.error("Error fetching user favorites:", error);
     return [];
   }
 };
 
-const Dashboard = ({ userId }) => {
+const Dashboard = (user_id) => {
   const [favorites, setFavorites] = useState([]);
 
   useEffect(() => {
     const loadFavorites = async () => {
-      const favoritesData = await fetchUserFavorites(userId);
+      const favoritesData = await fetchUserFavorites(user_id);
       setFavorites(favoritesData);
     };
 
     loadFavorites();
-  }, [userId]);
+  }, [user_id]);
 
   return (
     <>
       <h1>DASHBOARD</h1>
       <div>
         <h2>Favorites</h2>
-
-        {favorites.map((filteredData) => (
-          <li key={filteredData.aid_instructions.id}>
-            <h3>{filteredData.aid_instructions.name}</h3>
-            <p>{filteredData.aid_instructions.steps}</p>
-          </li>
-        ))}
+        {favorites && favorites.length > 0 ? (
+          favorites.map((favorite) => (
+            <li key={favorite.instruction_id}>
+              <h3>{favorite.aid_instructions.name}</h3>
+              <p>{favorite.aid_instructions.steps}</p>
+            </li>
+          ))
+        ) : (
+          <p>No favorites found</p>
+        )}
       </div>
     </>
   );

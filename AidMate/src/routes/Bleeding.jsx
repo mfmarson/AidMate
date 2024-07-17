@@ -1,10 +1,15 @@
+import { Link } from "react-router-dom";
+
+
 const Bleeding = () => {
   return (
     <>
       <div className="emergencyButtons">
         <button type="button">CALL 911</button>
-       
-        <button type="button">Emergency Room Near Me</button>
+
+        <Link to="/MapComponent">
+          <button type="button">Emergency Room Near Me</button>
+        </Link>
       </div>
       <nav className="FirstAidName">Bleeding</nav>
       <div>
@@ -26,9 +31,13 @@ const Bleeding = () => {
           </li>
         </ul>
       </div>
-      <button className="hearButton" type="button">Hear Instructions</button>
+      <button className="hearButton" type="button">
+        Hear Instructions
+      </button>
       <div>
-        <button className="favoritesButton" type="button">Add to Favorites</button>
+        <button className="favoritesButton" type="button">
+          Add to Favorites
+        </button>
       </div>
     </>
   );

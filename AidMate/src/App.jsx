@@ -10,7 +10,6 @@ import Register from "./routes/Register";
 import Search from "./routes/Search";
 import Response from "./routes/Response";
 import Contact from "./routes/Contact";
-
 import Bleeding from "./routes/Bleeding";
 import CPR from "./routes/CPR";
 import Burns from "./routes/Burns";
@@ -18,6 +17,7 @@ import Choking from "./routes/Choking";
 import Dropdown from "./components/Dropdown";
 import Dashboard from "./routes/Dashboard";
 import About from "./routes/About";
+import MapComponent from "./routes/MapComponent";
 
 const router = createBrowserRouter([
   {
@@ -80,6 +80,10 @@ const router = createBrowserRouter([
       {
         path: "Choking",
         element: <Choking />,
+      },
+      {
+        path: "MapComponent",
+        element: <MapComponent />,
       },
     ],
   },
