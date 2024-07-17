@@ -3,19 +3,22 @@ import { supabase } from "../supabaseConfig";
 
 const fetchUserFavorites = async (user_id) => {
   try {
-    console.log("Fetching favorites for user:", user_id);
     const { data, error } = await supabase
       .from("favorites")
       .select(
         `
+        id,
+        user_id,
         instruction_id,
         aid_instructions (
           id,
           name,
           steps
-        )`
+        )
+      `
       )
       .eq("user_id", user_id);
+
     if (error) {
       throw error;
     }
@@ -27,7 +30,7 @@ const fetchUserFavorites = async (user_id) => {
   }
 };
 
-const Dashboard = (user_id) => {
+const Dashboard = ({ user_id }) => {
   const [favorites, setFavorites] = useState([]);
 
   useEffect(() => {
@@ -44,7 +47,7 @@ const Dashboard = (user_id) => {
       <h1>DASHBOARD</h1>
       <div>
         <h2>Favorites</h2>
-        {favorites && favorites.length > 0 ? (
+        {favorites.length > 0 ? (
           favorites.map((favorite) => (
             <li key={favorite.instruction_id}>
               <h3>{favorite.aid_instructions.name}</h3>

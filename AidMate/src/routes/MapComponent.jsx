@@ -20,7 +20,7 @@ const MapComponent = () => {
     mapRef.current = new mapboxgl.Map({
       container: mapContainerRef.current,
       style: "mapbox://styles/mapbox/streets-v11",
-      center: [-79.4512, 43.6568], // Default center
+      center: [-79.4512, 43.6568],
       zoom: 13,
     });
 
@@ -33,41 +33,42 @@ const MapComponent = () => {
     mapRef.current.addControl(directions, "top-left");
     directionsRef.current = directions;
 
-    // Get the user's current position using the Geolocation API
     navigator.geolocation.getCurrentPosition(
       (position) => {
         const { longitude, latitude } = position.coords;
         setUserLocation([longitude, latitude]);
         mapRef.current.setCenter([longitude, latitude]);
-        directions.setOrigin([longitude, latitude]); // Automatically set the user's location as the starting point
+        directions.setOrigin([longitude, latitude]);
       },
       (error) => {
         console.error("Error getting geolocation: ", error);
       }
     );
 
-    const geocoder = new MapboxGeocoder({
-      accessToken: mapboxgl.accessToken,
-      mapboxgl: mapboxgl,
-      placeholder: "Search for a hospital",
-      proximity: userLocation
-        ? { longitude: userLocation[0], latitude: userLocation[1] }
-        : undefined,
-    });
-    mapRef.current.addControl(geocoder);
-
-    geocoder.on("result", (event) => {
-      const { result } = event;
-      directions.setDestination(result.geometry.coordinates);
-    });
-
     return () => mapRef.current.remove();
+  }, []);
+
+  useEffect(() => {
+    if (userLocation) {
+      const geocoder = new MapboxGeocoder({
+        accessToken: mapboxgl.accessToken,
+        mapboxgl: mapboxgl,
+        placeholder: "Search for a hospital",
+        proximity: { longitude: userLocation[0], latitude: userLocation[1] },
+      });
+      mapRef.current.addControl(geocoder);
+
+      geocoder.on("result", (event) => {
+        const { result } = event;
+        directionsRef.current.setDestination(result.geometry.coordinates);
+      });
+    }
   }, [userLocation]);
 
   return (
     <div>
-      <h1>Find Nearest Hospital and Get Directions</h1>{" "}
-      <div ref={mapContainerRef} style={{ width: "100%", height: "600px" }} />{" "}
+      <h1>Find Nearest Hospital and Get Directions</h1>
+      <div ref={mapContainerRef} style={{ width: "100%", height: "600px" }} />
     </div>
   );
 };
