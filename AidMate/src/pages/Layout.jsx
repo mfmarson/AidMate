@@ -9,7 +9,6 @@ const Layout = () => {
     { value: "./Dashboard", label: "Dashboard" },
     { value: "./Search", label: "Search First Aid" },
     { value: "./About", label: "About Us" },
-    { value: "./Login", label: "Login" },
   ];
 
   return (

@@ -1,16 +1,18 @@
 import { useEffect, useState } from "react";
 import { supabase } from "../supabaseConfig";
 
+
 const fetchUserFavorites = async () => {
   try {
-    const { data: favorites, error } = await supabase
+    let { data, error } = await supabase
       .from("favorites")
       .select(
         `*,
-        aid_instructions(*)
+        aid_instructions(name,steps)
       `
       )
-      // .eq("user_id", "user_id");
+      .eq("user_id", 7);
+    // hard coded change for demo
 
     if (error) {
       throw error;

@@ -67,7 +67,8 @@ const MapComponent = () => {
 
   return (
     <div>
-      <h1>Find Nearest Hospital and Get Directions</h1>
+      <h1>Find the Nearest Hospital</h1>
+      <p>Type hospital into search field and select from dropdown menu to see directions</p>
       <div ref={mapContainerRef} style={{ width: "100%", height: "600px" }} />
     </div>
   );

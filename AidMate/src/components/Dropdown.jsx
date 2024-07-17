@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-
 const Dropdown = ({ options }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -17,7 +16,7 @@ const Dropdown = ({ options }) => {
   };
 
   return (
-    <div className="dropdown">
+    <div>
       <button onClick={toggleDropdown} className="dropdown-toggle">
         Menu
       </button>

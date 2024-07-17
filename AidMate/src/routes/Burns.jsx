@@ -1,11 +1,32 @@
 import { Link } from "react-router-dom";
+import { readText } from "../components/screenReader";
 
+const handleButtonClick = () => {
+  if (window.speechSynthesis.speaking) {
+    window.speechSynthesis.cancel();
+  } else {
+    const stepsList = document.querySelectorAll(".stepsList li");
+    let stepsText = "";
+    stepsList.forEach((step) => {
+      stepsText += `${step.textContent}. `;
+    });
+
+    readText(stepsText);
+  }
+};
 
 const Burns = () => {
   return (
     <>
       <div className="emergencyButtons">
         <button type="button">CALL 911</button>
+        <button
+          onClick={handleButtonClick}
+          className="hearButton"
+          type="button"
+        >
+          Hear Instructions
+        </button>
 
         <Link to="/MapComponent">
           <button type="button">Emergency Room Near Me</button>
@@ -31,9 +52,6 @@ const Burns = () => {
         </ul>
       </div>
 
-      <button className="hearButton" type="button">
-        Hear Instructions
-      </button>
       <div>
         <button className="favoritesButton" type="button">
           Add to Favorites
