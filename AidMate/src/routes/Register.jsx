@@ -2,10 +2,10 @@ import { useState } from "react";
 import { useAuth } from "./AuthContext";
 import { useNavigate } from "react-router-dom";
 
-
 const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
   const { signUp } = useAuth();
   const navigate = useNavigate();
 
@@ -34,6 +34,7 @@ const SignUp = () => {
         value={password}
         onChange={(e) => setPassword(e.target.value)}
       />
+
       <button type="submit">Sign Up</button>
     </form>
   );
