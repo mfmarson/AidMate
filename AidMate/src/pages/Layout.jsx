@@ -1,9 +1,8 @@
-import { Outlet, Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import Dropdown from "../components/Dropdown";
 
 const Layout = () => {
   const options = [
-    { value: "/", label: "Home" },
     { value: "./Contact", label: "Contact Us" },
     { value: "./Logout", label: "Logout" },
     { value: "./Dashboard", label: "Dashboard" },
@@ -13,16 +12,18 @@ const Layout = () => {
 
   return (
     <>
-      <header className="layoutNav">
-        <img src="./AidMateLogo.jpeg" alt="Logo" />
+      <nav className="generalNav">
+        <img src="./AidMateLogo.jpeg" alt="Logo" height={150} />
         <Dropdown options={options} />
+      </nav>
+      <div className="homeLinks">
         <Link to="/Login">
           <button>Login</button>
         </Link>
         <Link to="/Response">
           <button>First Aid Now</button>
         </Link>
-      </header>
+      </div>
 
       <div className="important">
         <p>
@@ -32,9 +33,9 @@ const Layout = () => {
           go to the nearest hospital immediately.
         </p>
       </div>
-
       <Outlet />
     </>
   );
 };
+
 export default Layout;
