@@ -27,7 +27,7 @@ const Dashboard = () => {
       let { data, error } = await supabase
         .from("favorites")
         .select(`*, aid_instructions(name, steps)`)
-        .eq("user_id", 6);
+        .eq("user_id", user.id);
 
       if (error) {
         throw error;
