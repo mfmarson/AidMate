@@ -1,33 +1,49 @@
 import { Link } from "react-router-dom";
 import { readText } from "../components/screenReader";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useAuth } from "./AuthContext";
 import supabase from "../supabaseConfig";
 
 const Choking = () => {
   const { user } = useAuth();
+  const [firstaidId, setFirstaidId] = useState(null);
 
-  const [showDropdown, setShowDropdown] = useState(false);
-  const options = [
-    { value: "/login", label: "Login" },
-    { value: "/search", label: "Search First Aid" },
-    { value: "/dashboard", label: "Dashboard" },
-    { value: "/logout", label: "Logout" },
-    { value: "/about", label: "About Us" },
-    { value: "/contact", label: "Contact Us" },
-  ];
+  useEffect(() => {
+    const fetchFirstaidId = async () => {
+      let { data } = await supabase
+        .from("firstaid")
+        .select("id")
+        .eq("name", "Choking");
+
+      if (data && data.length > 0) {
+        setFirstaidId(data[0].id);
+      }
+    };
+
+    fetchFirstaidId();
+  }, []);
 
   const addToFavorites = async () => {
-    let { data, error } = await supabase
-      .from("firstaid")
-      .select(`id`)
-      .eq("name", "Choking");
+    if (!firstaidId) return;
 
-    const firstaidId = data[0].id;
     await supabase.from("favorites").insert({
       profile_id: user.id,
       firstaid_id: firstaidId,
     });
+  };
+
+  const removeFromFavorites = async () => {
+    if (!firstaidId) return;
+
+    let { error } = await supabase
+      .from("favorites")
+      .delete()
+      .eq("profile_id", user.id)
+      .eq("firstaid_id", firstaidId);
+
+    if (error) {
+      console.error(error);
+    }
   };
 
   const handleButtonClick = () => {
@@ -43,35 +59,9 @@ const Choking = () => {
       readText(stepsText);
     }
   };
-  const toggleDropdown = () => {
-    setShowDropdown(!showDropdown);
-  };
 
   return (
     <>
-      <nav className="generalNav">
-        <img src="./AidMateLogo.jpeg" alt="Logo" height={150} />
-        <button type="button" onClick={toggleDropdown}>
-          Menu
-        </button>
-        {showDropdown && (
-          <ul className="dropdown">
-            {options.map((option, index) => (
-              <li key={index}>
-                <Link to={option.value}>{option.label}</Link>
-              </li>
-            ))}
-          </ul>
-        )}
-        <div className="important">
-          <p>
-            <strong>Important Notice:</strong> This app provides first aid
-            instructions for informational purposes only. If you are uncertain
-            or if the situation is severe, please seek professional medical help
-            or go to the nearest hospital immediately.
-          </p>
-        </div>
-      </nav>
       <div className="emergencyButtons">
         <button type="button">CALL 911</button>
         <button
@@ -136,6 +126,15 @@ const Choking = () => {
           type="button"
         >
           Add to Favorites
+        </button>
+      </div>
+      <div>
+        <button
+          onClick={removeFromFavorites}
+          className="favoritesButton"
+          type="button"
+        >
+          Remove From Favorites
         </button>
       </div>
     </>

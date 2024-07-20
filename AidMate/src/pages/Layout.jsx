@@ -12,27 +12,28 @@ const Layout = () => {
 
   return (
     <>
-      <nav className="generalNav">
+      <nav className=" flex-col align-content: center; ">
         <img src="./AidMateLogo.jpeg" alt="Logo" height={150} />
         <Dropdown options={options} />
-      </nav>
-      <div className="homeLinks">
-        <Link to="/Login">
-          <button>Login</button>
-        </Link>
-        <Link to="/Response">
-          <button>First Aid Now</button>
-        </Link>
-      </div>
 
-      <div className="important">
-        <p>
-          <strong>Important Notice:</strong> This app provides first aid
-          instructions for informational purposes only. If you are uncertain or
-          if the situation is severe, please seek professional medical help or
-          go to the nearest hospital immediately.
-        </p>
-      </div>
+        <div>
+          <Link to="/Login">
+            <button>Login</button>
+          </Link>
+          <Link to="/Response">
+            <button>First Aid Now</button>
+          </Link>
+        </div>
+
+        <div className="important">
+          <p>
+            <strong>Important Notice:</strong> This app provides first aid
+            instructions for informational purposes only. If you are uncertain
+            or if the situation is severe, please seek professional medical help
+            or go to the nearest hospital immediately.
+          </p>
+        </div>
+      </nav>
       <Outlet />
     </>
   );
