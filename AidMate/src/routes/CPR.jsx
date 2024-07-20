@@ -1,8 +1,12 @@
 import { Link } from "react-router-dom";
 import { readText } from "../components/screenReader";
 import { useState } from "react";
+import { useAuth } from "./AuthContext";
+import supabase from "../supabaseConfig";
 
 const CPR = () => {
+  const { user } = useAuth();
+
   const [showDropdown, setShowDropdown] = useState(false);
   const options = [
     { value: "/login", label: "Login" },
@@ -12,6 +16,19 @@ const CPR = () => {
     { value: "/about", label: "About Us" },
     { value: "/contact", label: "Contact Us" },
   ];
+
+  const addToFavorites = async () => {
+    let { data, error } = await supabase
+      .from("firstaid")
+      .select(`id`)
+      .eq("name", "CPR");
+
+    const firstaidId = data[0].id;
+    await supabase.from("favorites").insert({
+      profile_id: user.id,
+      firstaid_id: firstaidId,
+    });
+  };
 
   const handleButtonClick = () => {
     if (window.speechSynthesis.speaking) {
@@ -88,7 +105,11 @@ const CPR = () => {
       </div>
 
       <div>
-        <button className="favoritesButton" type="button">
+        <button
+          className="favoritesButton"
+          type="button"
+          onClick={addToFavorites}
+        >
           Add to Favorites
         </button>
       </div>
