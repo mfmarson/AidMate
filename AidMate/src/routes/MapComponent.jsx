@@ -11,43 +11,63 @@ mapboxgl.accessToken =
 
 const MapComponent = () => {
   const mapContainerRef = useRef(null);
+  const directionsContainerRef = useRef(null);
   const mapRef = useRef(null);
   const directionsRef = useRef(null);
   const [userLocation, setUserLocation] = useState(null);
   const [geocoderRef, setGeocoderRef] = useState(null);
   const [hospitalName, setHospitalName] = useState(null);
+  const [showMap, setShowMap] = useState(true); // State to control map visibility, initialized to true
 
   useEffect(() => {
-    mapRef.current = new mapboxgl.Map({
-      container: mapContainerRef.current,
-      style: "mapbox://styles/mapbox/streets-v11",
-      center: [-79.4512, 43.6568],
-      zoom: 13,
-    });
+    if (showMap) {
+      mapRef.current = new mapboxgl.Map({
+        container: mapContainerRef.current,
+        style: "mapbox://styles/mapbox/streets-v11",
+        center: [-79.4512, 43.6568],
+        zoom: 13,
+      });
 
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          const { longitude, latitude } = position.coords;
+          setUserLocation([longitude, latitude]);
+          mapRef.current.setCenter([longitude, latitude]);
+        },
+        (error) => {
+          console.error("Error getting geolocation: ", error);
+        }
+      );
+
+      return () => mapRef.current.remove();
+    }
+  }, [showMap]);
+
+  useEffect(() => {
     const directions = new MapboxDirections({
       accessToken: mapboxgl.accessToken,
       unit: "metric",
       profile: "mapbox/driving",
       controls: { inputs: false },
     });
-    mapRef.current.addControl(directions, "top-left");
+
+    if (directionsContainerRef.current) {
+      directionsContainerRef.current.appendChild(
+        directions.onAdd(mapRef.current)
+      );
+    }
     directionsRef.current = directions;
 
-    navigator.geolocation.getCurrentPosition(
-      (position) => {
-        const { longitude, latitude } = position.coords;
-        setUserLocation([longitude, latitude]);
-        mapRef.current.setCenter([longitude, latitude]);
-        directions.setOrigin([longitude, latitude]);
-      },
-      (error) => {
-        console.error("Error getting geolocation: ", error);
-      }
-    );
+    if (userLocation) {
+      directions.setOrigin(userLocation);
+    }
 
-    return () => mapRef.current.remove();
-  }, []);
+    return () => {
+      if (directionsContainerRef.current) {
+        directionsContainerRef.current.innerHTML = "";
+      }
+    };
+  }, [userLocation]);
 
   useEffect(() => {
     if (userLocation) {
@@ -57,7 +77,9 @@ const MapComponent = () => {
         placeholder: "Search for a hospital",
         proximity: { longitude: userLocation[0], latitude: userLocation[1] },
       });
-      mapRef.current.addControl(geocoder);
+      if (mapRef.current) {
+        mapRef.current.addControl(geocoder);
+      }
       setGeocoderRef(geocoder);
 
       geocoder.on("result", (event) => {
@@ -87,14 +109,20 @@ const MapComponent = () => {
       <button type="button" onClick={triggerGeocoder}>
         Find Nearest Hospital
       </button>
-      <h1>Find the Nearest Hospital</h1>
+    
       <p>Click the button to find the nearest hospital and see directions</p>
       {hospitalName && (
         <p>
           <strong>Nearest Hospital:</strong> {hospitalName}
         </p>
       )}
-      <div ref={mapContainerRef} style={{ width: "100%", height: "600px" }} />
+      <div
+        ref={directionsContainerRef}
+        style={{ width: "100%", height: "auto" }}
+      />
+      {showMap && (
+        <div ref={mapContainerRef} style={{ width: "50%", height: "200px" }} />
+      )}
     </>
   );
 };

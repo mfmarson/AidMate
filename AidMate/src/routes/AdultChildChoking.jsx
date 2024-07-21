@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { useAuth } from "./AuthContext";
 import supabase from "../supabaseConfig";
 
-const CPR = () => {
+const AdultChildChoking = () => {
   const { user } = useAuth();
   const [firstaidId, setFirstaidId] = useState(null);
 
@@ -13,7 +13,7 @@ const CPR = () => {
       let { data } = await supabase
         .from("firstaid")
         .select("id")
-        .eq("name", "CPR");
+        .eq("name", "AdultChildChoking");
 
       if (data && data.length > 0) {
         setFirstaidId(data[0].id);
@@ -75,31 +75,31 @@ const CPR = () => {
         <Link to="/MapComponent">
           <button type="button">Directions to Hospital</button>
         </Link>
-      </div>
-      <h1>CPR</h1>
-      <div>
+        <h1>Adult or Child Choking</h1>
         <ul className="stepsList">
           <li>
-            Check Response: Tap and shout to check if the person is responsive.
-          </li>
-          <li>Call for Help: Dial emergency services immediately.</li>
-          <li>
-            Begin Chest Compressions: Place hands in the center of the chest and
-            push hard and fast (100-120 compressions per minute).
+            Encourage Coughing: If the person can cough, encourage them to keep
+            coughing.
           </li>
           <li>
-            Rescue Breaths (if trained): After 30 compressions, give 2 breaths,
-            tilting the head back and lifting the chin.
+            Perform Back Blows: If coughing fails, give 5 firm back blows
+            between the shoulder blades.
           </li>
-          <li>Continue until this cycle Emergency Service arrives</li>
+          <li>
+            Abdominal Thrusts: Stand behind the person, place your fist above
+            their navel, and perform 5 quick upward thrusts.
+          </li>
+          <li>
+            Repeat: Alternate between 5 back blows and 5 abdominal thrusts until
+            the object is expelled or help arrives.
+          </li>
         </ul>
       </div>
-
       <div>
         <button
+          onClick={addToFavorites}
           className="favoritesButton"
           type="button"
-          onClick={addToFavorites}
         >
           Add to Favorites
         </button>
@@ -117,4 +117,4 @@ const CPR = () => {
   );
 };
 
-export default CPR;
+export default AdultChildChoking;

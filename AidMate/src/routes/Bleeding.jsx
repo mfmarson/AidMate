@@ -72,10 +72,10 @@ const Bleeding = () => {
         </button>
 
         <Link to="/MapComponent">
-          <button type="button">Emergency Room Near Me</button>
+          <button type="button">Directions to Hospital</button>
         </Link>
       </div>
-      <nav className="FirstAidName">Bleeding</nav>
+      <h1>Bleeding</h1>
       <div>
         <ul className="stepsList">
           <li>

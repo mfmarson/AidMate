@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { supabase } from "../supabaseConfig";
 import { useAuth } from "./AuthContext";
+import { Link } from "react-router-dom";
 
 const Dashboard = () => {
   const { user } = useAuth();
@@ -39,17 +40,31 @@ const Dashboard = () => {
   return (
     <div className="dashboard_ui">
       <h1>Account Information:</h1>
-      <p>Data from user_info table will be fetched here</p>
+      <ul>
+        <li>Name:</li>
+        <li>Email:</li>
+        <li>Phone Number:</li>
+        <li>Emergency Contact:</li>
+        <li>Primary Care Physician:</li>
+      </ul>
       <h1>Favorites:</h1>
       {favorites.length > 0 ? (
-        <ul>
-          {favorites.map((favorite) => (
-            <li key={favorite.name}>
-              <h3>{favorite.name}</h3>
-              <p>{favorite.steps}</p>
-            </li>
-          ))}
-        </ul>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Steps</th>
+            </tr>
+          </thead>
+          <tbody>
+            {favorites.map((favorite) => (
+              <tr key={favorite.name}>
+                <td>{favorite.name}</td>
+                <td>{favorite.steps}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       ) : (
         <p>No favorites found</p>
       )}

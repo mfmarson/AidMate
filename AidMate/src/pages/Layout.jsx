@@ -3,11 +3,12 @@ import Dropdown from "../components/Dropdown";
 
 const Layout = () => {
   const options = [
-    { value: "./Contact", label: "Contact Us" },
+    { value: "./Search", label: "View First Aid" },
+    { value: "./Login", label: "Login" },
     { value: "./Logout", label: "Logout" },
-    { value: "./Dashboard", label: "Dashboard" },
-    { value: "./Search", label: "Search First Aid" },
     { value: "./About", label: "About Us" },
+    { value: "./Dashboard", label: "Dashboard" },
+    { value: "./Contact", label: "Contact Us" },
   ];
 
   return (
@@ -17,11 +18,8 @@ const Layout = () => {
         <Dropdown options={options} />
 
         <div>
-          <Link to="/Login">
-            <button>Login</button>
-          </Link>
           <Link to="/Response">
-            <button>First Aid Now</button>
+            <button>First Aid NOW</button>
           </Link>
         </div>
 
@@ -35,6 +33,7 @@ const Layout = () => {
         </div>
       </nav>
       <Outlet />
+      <footer>Created by: Megan Marson</footer>
     </>
   );
 };

@@ -6,19 +6,20 @@ const SignIn = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const { signIn } = useAuth();
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleSignIn = async (event) => {
     event.preventDefault();
     const { error } = await signIn(email, password);
+
     if (error) {
-      alert(error.message);
+      setErrorMessage("Incorrect Credentials");
     }
   };
 
-  
   return (
     <>
-      <form className="formui" onSubmit={handleSignIn}>
+      <form onSubmit={handleSignIn}>
         <input
           type="email"
           placeholder="Email"
@@ -34,6 +35,7 @@ const SignIn = () => {
 
         <button type="submit">Login</button>
       </form>
+      {errorMessage && <div className="error">{errorMessage}</div>}
 
       <Link to="/Register">Register Here!</Link>
     </>

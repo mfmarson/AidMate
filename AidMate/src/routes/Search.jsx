@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 
-
 const Search = () => {
   const phoneNumber = "4045206112";
 
@@ -10,7 +9,7 @@ const Search = () => {
         CALL 911
       </button>
       <Link to="/MapComponent">
-        <button type="button">Hospitals Near Me</button>
+        <button type="button">Directions to Hospital</button>
       </Link>
       <div>
         <h1>SELECT FIRST AID INSTRUCTIONS BELOW</h1>

@@ -17,11 +17,13 @@ const Home = () => {
           </p>
         </div>
         <div>
-          <Link to="/Login">
-            <button className="bg-blue-100">Login</button>
-          </Link>
           <Link to="/Response">
-            <button>First Aid Now</button>
+            <button>First Aid NOW</button>
+          </Link>
+          <Link to="/Login">
+            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+              Login
+            </button>
           </Link>
         </div>
       </div>

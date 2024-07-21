@@ -1,7 +1,6 @@
 import { useAuth } from "./AuthContext";
 import { useNavigate, Link } from "react-router-dom";
 
-
 const SignOut = () => {
   const { signOut } = useAuth();
   const navigate = useNavigate();
@@ -17,7 +16,7 @@ const SignOut = () => {
 
   return (
     <>
-      <h1>Thank you for using AidMate</h1>
+      <h1>Thank you for choosing AidMate</h1>
       <Link to="/Login">
         <button onClick={handleSignOut} className="button">
           Logout

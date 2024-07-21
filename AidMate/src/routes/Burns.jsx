@@ -44,8 +44,6 @@ const Burns = () => {
 
     if (error) {
       console.error(error);
-    } else {
-      // Optionally update the favorites state here
     }
   };
 
@@ -72,15 +70,15 @@ const Burns = () => {
           className="hearButton"
           type="button"
         >
-          Hear Instructions
+          Audio Instructions
         </button>
 
         <Link to="/MapComponent">
-          <button type="button">Emergency Room Near Me</button>
+          <button type="button">Directions to Hospital</button>
         </Link>
       </div>
 
-      <nav className="FirstAidName">Burns</nav>
+      <h1>Burns</h1>
       <div>
         <ul className="stepsList">
           <li>

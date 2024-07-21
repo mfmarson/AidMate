@@ -20,6 +20,8 @@ import Dashboard from "./routes/Dashboard";
 import About from "./routes/About";
 import MapComponent from "./routes/MapComponent";
 import Home from "./routes/Home";
+import InfantChoking from "./routes/InfantChoking";
+import AdultChildChoking from "./routes/AdultChildChoking";
 
 const App = () => {
   const { user } = useAuth();
@@ -82,6 +84,14 @@ const App = () => {
         {
           path: "Choking",
           element: <Choking />,
+        },
+        {
+          path: "InfantChoking",
+          element: <InfantChoking />,
+        },
+        {
+          path: "AdultChildChoking",
+          element: <AdultChildChoking />,
         },
         {
           path: "MapComponent",
