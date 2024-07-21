@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useAuth } from "./AuthContext";
+import styles from "./modules/Login.module.css"; // Ensure this path is correct
 
 const SignIn = () => {
   const [email, setEmail] = useState("");
@@ -18,27 +19,31 @@ const SignIn = () => {
   };
 
   return (
-    <>
-      <form onSubmit={handleSignIn}>
+    <div className={styles.formWrapper}>
+      <form onSubmit={handleSignIn} className={styles.form}>
         <input
           type="email"
           placeholder="Email"
           value={email}
           onChange={(event) => setEmail(event.target.value)}
+          className={styles.input}
         />
         <input
           type="password"
           placeholder="Password"
           value={password}
           onChange={(event) => setPassword(event.target.value)}
+          className={styles.input}
         />
-
-        <button type="submit">Login</button>
+        <button type="submit" className={styles.button}>
+          Login
+        </button>
       </form>
-      {errorMessage && <div className="error">{errorMessage}</div>}
-
-      <Link to="/Register">Register Here!</Link>
-    </>
+      {errorMessage && <div className={styles.error}>{errorMessage}</div>}
+      <Link to="/Register" className={styles.link}>
+        Register Here!
+      </Link>
+    </div>
   );
 };
 

@@ -1,9 +1,15 @@
 /* eslint-disable react/no-unescaped-entities */
+import styles from "./modules/About.module.css"; // Ensure this path is correct
+
 const About = () => {
   return (
-    <>
-      <img src="./src/assets/Baymax.avif" alt="Baymax" height={200}></img>
-      <p className="aboutme_ui">
+    <div className={styles.container}>
+      <img
+        src="./src/assets/Baymax.avif"
+        alt="Baymax"
+        className={styles.image}
+      ></img>
+      <p className={styles.aboutMeUi}>
         Introducing AidMate, a first aid application for both web and mobile
         devices, designed to provide quick and efficient first aid instructions
         for people just like you. AidMate was inspired by Baymax, Disney's
@@ -22,7 +28,7 @@ const About = () => {
         real-life Baymax. For now, we're excited to bring you this first step in
         making first aid accessible and straightforward for everyone.
       </p>
-    </>
+    </div>
   );
 };
 

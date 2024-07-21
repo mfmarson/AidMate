@@ -1,5 +1,6 @@
 import { Link, Outlet } from "react-router-dom";
 import Dropdown from "../components/Dropdown";
+import styles from ".routes/modules/Layout.module.css";
 
 const Layout = () => {
   const options = [
@@ -13,17 +14,15 @@ const Layout = () => {
 
   return (
     <>
-      <nav className=" flex-col align-content: center; ">
-        <img src="./AidMateLogo.jpeg" alt="Logo" height={150} />
+      <nav className={styles.navbar}>
+        <img src="./AidMateLogo.jpeg" alt="Logo" className={styles.logo} />
         <Dropdown options={options} />
-
         <div>
           <Link to="/Response">
             <button>First Aid NOW</button>
           </Link>
         </div>
-
-        <div className="important">
+        <div className={styles.important}>
           <p>
             <strong>Important Notice:</strong> This app provides first aid
             instructions for informational purposes only. If you are uncertain
@@ -33,7 +32,7 @@ const Layout = () => {
         </div>
       </nav>
       <Outlet />
-      <footer>Created by: Megan Marson</footer>
+      <footer className={styles.footer}>Created by: Megan Marson</footer>
     </>
   );
 };

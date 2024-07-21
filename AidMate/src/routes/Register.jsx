@@ -1,45 +1,30 @@
-import { useState } from "react";
 import { useAuth } from "./AuthContext";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
+import styles from "./modules/Logout.module.css"; // Ensure this path is correct
 
-
-const SignUp = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-
-  const { signUp } = useAuth();
+const SignOut = () => {
+  const { signOut } = useAuth();
   const navigate = useNavigate();
 
-  const handleSignUp = async (e) => {
-    e.preventDefault();
-    const { error } = await signUp(email, password);
+  const handleSignOut = async () => {
+    const { error } = await signOut();
     if (error) {
       alert(error.message);
     } else {
-      alert("You have registered successfully!");
       navigate("/Login");
     }
   };
 
   return (
-    <>
-      <form className="formui" onSubmit={handleSignUp}>
-        <input
-          placeholder="Email"
-          type="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <input
-          placeholder="Password"
-          type="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <button type="submit">Sign Up</button>
-      </form>
-    </>
+    <div className={styles.container}>
+      <h1 className={styles.title}>Thank you for choosing AidMate</h1>
+      <Link to="/Login">
+        <button onClick={handleSignOut} className={styles.button}>
+          Logout
+        </button>
+      </Link>
+    </div>
   );
 };
 
-export default SignUp;
+export default SignOut;

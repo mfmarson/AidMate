@@ -1,0 +1,58 @@
+/* Home.module.css */
+
+.homeWrapper {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(to bottom, white, #e6f2ff);
+}
+
+.homeLogo {
+  height: 150px;
+  margin-top: 20px;
+}
+
+.notice {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffefc5;
+  border: 1px solid #ffdd99;
+  border-radius: 5px;
+  max-width: 600px;
+}
+
+.notice p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.notice strong {
+  color: #d9534f;
+}
+
+.buttonGroup {
+  margin-top: 20px;
+}
+
+.buttonGroup button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.firstAid {
+  background-color: #0275d8;
+  color: white;
+}
+
+.login {
+  background-color: #d9534f;
+  color: white;
+}
+
+.login:hover {
+  background-color: #c9302c;
+}

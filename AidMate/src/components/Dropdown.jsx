@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+// import styles from "./modules/Dropdown.module.css"; // Ensure this path is correct
 
 const Dropdown = ({ options }) => {
   const [isOpen, setIsOpen] = useState(false);
-
   const navigate = useNavigate();
 
   const toggleDropdown = () => {
@@ -17,17 +17,11 @@ const Dropdown = ({ options }) => {
 
   return (
     <div>
-      <button onClick={toggleDropdown} className="dropdown-toggle">
-        Menu
-      </button>
+      <button onClick={toggleDropdown}>Menu</button>
       {isOpen && (
-        <ul className="dropdown-menu">
+        <ul>
           {options.map((option) => (
-            <li
-              key={option.value}
-              onClick={() => handleOptionClick(option)}
-              className="dropdown-item"
-            >
+            <li key={option.value} onClick={() => handleOptionClick(option)}>
               {option.label}
             </li>
           ))}
