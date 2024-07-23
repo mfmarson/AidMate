@@ -109,7 +109,7 @@ const MapComponent = () => {
       <button type="button" onClick={triggerGeocoder}>
         Find Nearest Hospital
       </button>
-    
+
       <p>Click the button to find the nearest hospital and see directions</p>
       {hospitalName && (
         <p>
@@ -121,7 +121,10 @@ const MapComponent = () => {
         style={{ width: "100%", height: "auto" }}
       />
       {showMap && (
-        <div ref={mapContainerRef} style={{ width: "50%", height: "200px" }} />
+        <div
+          ref={mapContainerRef}
+          style={{ width: "50%", height: "200px", visibility: "hidden" }}
+        />
       )}
     </>
   );

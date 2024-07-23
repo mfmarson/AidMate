@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-// import styles from "./modules/Dropdown.module.css"; // Ensure this path is correct
+import styles from "/Users/meganmarson/Repos/AidMate/AidMate/src/routes/modules/Dropdown.module.css";
 
 const Dropdown = ({ options }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,12 +16,18 @@ const Dropdown = ({ options }) => {
   };
 
   return (
-    <div>
-      <button onClick={toggleDropdown}>Menu</button>
+    <div className={styles.dropdown}>
+      <button onClick={toggleDropdown} className={styles.dropdownToggle}>
+        Menu
+      </button>
       {isOpen && (
-        <ul>
+        <ul className={styles.dropdownMenu}>
           {options.map((option) => (
-            <li key={option.value} onClick={() => handleOptionClick(option)}>
+            <li
+              key={option.value}
+              onClick={() => handleOptionClick(option)}
+              className={styles.dropdownItem}
+            >
               {option.label}
             </li>
           ))}

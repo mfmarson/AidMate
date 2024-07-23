@@ -1,15 +1,20 @@
 import { Link } from "react-router-dom";
+import styles from "/Users/meganmarson/Repos/AidMate/AidMate/src/routes/modules/Response.module.css";
 
 const Response = () => {
   return (
     <>
-      <h1>IS THE PERSON RESPONSIVE AND BREATHING?</h1>
-      <Link to="/Search">
-        <button>YES</button>
-      </Link>
-      <Link to="/CPR">
-        <button>NO</button>
-      </Link>
+      <div className={styles.container}>
+        <h1>IS THE PERSON RESPONSIVE AND BREATHING?</h1>
+        <div>
+          <Link className={styles.buttonGroup} to="/Search">
+            <button className={styles.yes}>YES</button>
+          </Link>
+          <Link className={styles.buttonGroup} to="/CPR">
+            <button className={styles.no}>NO</button>
+          </Link>
+        </div>
+      </div>
     </>
   );
 };

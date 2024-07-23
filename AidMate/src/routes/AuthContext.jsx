@@ -45,7 +45,7 @@ export const AuthProvider = ({ children }) => {
         email,
         password,
         options: {
-          data: { email, password, first_name: "Test", last_name: "User" },
+          data: { email, password },
         },
       });
       if (error) throw error;

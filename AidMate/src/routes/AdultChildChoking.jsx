@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { Link } from "react-router-dom";
 import { readText } from "../components/screenReader";
 import { useState, useEffect } from "react";
@@ -7,6 +8,7 @@ import supabase from "../supabaseConfig";
 const AdultChildChoking = () => {
   const { user } = useAuth();
   const [firstaidId, setFirstaidId] = useState(null);
+  const [audioPlaying, setaudioPlaying] = useState(false);
 
   useEffect(() => {
     const fetchFirstaidId = async () => {
@@ -49,6 +51,7 @@ const AdultChildChoking = () => {
   const handleButtonClick = () => {
     if (window.speechSynthesis.speaking) {
       window.speechSynthesis.cancel();
+      setaudioPlaying(false);
     } else {
       const stepsList = document.querySelectorAll(".stepsList li");
       let stepsText = "";
@@ -57,7 +60,15 @@ const AdultChildChoking = () => {
       });
 
       readText(stepsText);
+      setaudioPlaying(true);
     }
+  };
+
+  const readText = (text) => {
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.onend = () => setaudioPlaying(false);
+    utterance.oncancel = () => setaudioPlaying(false);
+    window.speechSynthesis.speak(utterance);
   };
 
   return (
@@ -69,7 +80,7 @@ const AdultChildChoking = () => {
           className="hearButton"
           type="button"
         >
-          Audio Instructions
+          {audioPlaying ? "Stop" : "Audio Instructions"}
         </button>
 
         <Link to="/MapComponent">

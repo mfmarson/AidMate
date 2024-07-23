@@ -7,8 +7,11 @@ const Home = () => {
   console.log(user);
   return (
     <div className={styles.homeWrapper}>
-      <img src="./AidMateLogo.jpeg" alt="Logo" className={styles.homeLogo} />
-
+      <img
+        src="./src/assets/AidMate-removebg-preview.png"
+        alt="Logo"
+        className={styles.homeLogo}
+      />
       <div className={styles.notice}>
         <p>
           <strong>Important Notice:</strong> This app provides first aid
@@ -19,7 +22,7 @@ const Home = () => {
       </div>
       <div className={styles.buttonGroup}>
         <Link to="/Response">
-          <button className={styles.firstAid}>First Aid NOW</button>
+          <button className={styles.firstAidNow}>First Aid NOW</button>
         </Link>
         <Link to="/Login">
           <button className={styles.login}>Login</button>

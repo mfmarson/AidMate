@@ -4,7 +4,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import { useAuth } from "./routes/AuthContext";
-import Layout from "./pages/Layout";
+import Layout from "./components/Layout";
 import Error from "./pages/Error";
 import Login from "./routes/Login";
 import Logout from "./routes/Logout";
@@ -103,6 +103,7 @@ const App = () => {
 
   const router = createBrowserRouter(routes);
   return <RouterProvider router={router}></RouterProvider>;
+  
 };
 
 export default App;

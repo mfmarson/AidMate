@@ -1,30 +1,52 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import { useAuth } from "./AuthContext";
-import { useNavigate, Link } from "react-router-dom";
-import styles from "./modules/Logout.module.css"; // Ensure this path is correct
+import styles from "./modules/Register.module.css";
 
-const SignOut = () => {
-  const { signOut } = useAuth();
-  const navigate = useNavigate();
+const SignUp = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const { signUp } = useAuth();
+  const [errorMessage, setErrorMessage] = useState("");
 
-  const handleSignOut = async () => {
-    const { error } = await signOut();
+  const handleSignUp = async (event) => {
+    event.preventDefault();
+    const { error } = await signUp(email, password);
+
     if (error) {
-      alert(error.message);
+      setErrorMessage("Registration Failed");
     } else {
-      navigate("/Login");
+      alert("You have been registered!");
     }
   };
 
   return (
-    <div className={styles.container}>
-      <h1 className={styles.title}>Thank you for choosing AidMate</h1>
-      <Link to="/Login">
-        <button onClick={handleSignOut} className={styles.button}>
-          Logout
+    <div className={styles.formWrapper}>
+      <form onSubmit={handleSignUp} className={styles.form}>
+        <input
+          type="email"
+          placeholder="Email"
+          value={email}
+          onChange={(event) => setEmail(event.target.value)}
+          className={styles.input}
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          value={password}
+          onChange={(event) => setPassword(event.target.value)}
+          className={styles.input}
+        />
+        <button type="submit" className={styles.button}>
+          Register
         </button>
+      </form>
+      {errorMessage && <div className={styles.error}>{errorMessage}</div>}
+      <Link to="/login" className={styles.link}>
+        Already have an account? Login here!
       </Link>
     </div>
   );
 };
 
-export default SignOut;
+export default SignUp;

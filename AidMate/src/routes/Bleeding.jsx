@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { readText } from "../components/screenReader";
@@ -7,6 +8,7 @@ import { useAuth } from "./AuthContext";
 const Bleeding = () => {
   const { user } = useAuth();
   const [firstaidId, setFirstaidId] = useState(null);
+  const [audioPlaying, setaudioPlaying] = useState(false);
 
   useEffect(() => {
     const fetchFirstaidId = async () => {
@@ -48,6 +50,7 @@ const Bleeding = () => {
   const handleButtonClick = () => {
     if (window.speechSynthesis.speaking) {
       window.speechSynthesis.cancel();
+      setaudioPlaying(false);
     } else {
       const stepsList = document.querySelectorAll(".stepsList li");
       let stepsText = "";
@@ -56,7 +59,15 @@ const Bleeding = () => {
       });
 
       readText(stepsText);
+      setaudioPlaying(true);
     }
+  };
+
+  const readText = (text) => {
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.onend = () => setaudioPlaying(false);
+    utterance.oncancel = () => setaudioPlaying(false);
+    window.speechSynthesis.speak(utterance);
   };
 
   return (
@@ -68,7 +79,7 @@ const Bleeding = () => {
           className="hearButton"
           type="button"
         >
-          Hear Instructions
+          {audioPlaying ? "Stop" : "Audio Instructions"}
         </button>
 
         <Link to="/MapComponent">

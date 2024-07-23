@@ -1,5 +1,6 @@
 import { useAuth } from "./AuthContext";
 import { useNavigate, Link } from "react-router-dom";
+import styles from "/Users/meganmarson/Repos/AidMate/AidMate/src/routes/modules/Logout.module.css";
 
 const SignOut = () => {
   const { signOut } = useAuth();
@@ -16,12 +17,16 @@ const SignOut = () => {
 
   return (
     <>
-      <h1>Thank you for choosing AidMate</h1>
-      <Link to="/Login">
-        <button onClick={handleSignOut} className="button">
-          Logout
-        </button>
-      </Link>
+      <div className={styles.container}>
+        <h1>Thank you for choosing AidMate</h1>
+        <div>
+          <Link to="/Login">
+            <button className={styles.buttonGroup} onClick={handleSignOut}>
+              Logout
+            </button>
+          </Link>
+        </div>
+      </div>
     </>
   );
 };

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { supabase } from "../supabaseConfig";
 import { useAuth } from "./AuthContext";
-import { Link } from "react-router-dom";
+import styles from "./modules/Dashboard.module.css";
 
 const Dashboard = () => {
   const { user } = useAuth();
@@ -38,18 +38,33 @@ const Dashboard = () => {
   }
 
   return (
-    <div className="dashboard_ui">
+    <div className={styles.dashboard_ui}>
       <h1>Account Information:</h1>
-      <ul>
-        <li>Name:</li>
-        <li>Email:</li>
-        <li>Phone Number:</li>
-        <li>Emergency Contact:</li>
-        <li>Primary Care Physician:</li>
-      </ul>
+      <table className={styles.infoTable}>
+        <tbody>
+          <tr>
+            <td>Name: Tadashi Hamada </td>
+          </tr>
+          <tr>
+            <td>
+              Email:
+              {user.email}
+            </td>
+          </tr>
+          <tr>
+            <td>Phone Number: 678.867.5309</td>
+          </tr>
+          <tr>
+            <td>Emergency Contact: Leah Emmet - Aunt</td>
+          </tr>
+          <tr>
+            <td>Primary Care Physician: Dr.Amy Jones</td>
+          </tr>
+        </tbody>
+      </table>
       <h1>Favorites:</h1>
       {favorites.length > 0 ? (
-        <table>
+        <table className={styles.favoritesTable}>
           <thead>
             <tr>
               <th>Name</th>
@@ -60,7 +75,16 @@ const Dashboard = () => {
             {favorites.map((favorite) => (
               <tr key={favorite.name}>
                 <td>{favorite.name}</td>
-                <td>{favorite.steps}</td>
+                <td>
+                  <ol>
+                    {favorite.steps
+                      .split("\n")
+                      .filter((step) => step.trim() !== "")
+                      .map((step, index) => (
+                        <li key={index}>{step}</li>
+                      ))}
+                  </ol>
+                </td>
               </tr>
             ))}
           </tbody>

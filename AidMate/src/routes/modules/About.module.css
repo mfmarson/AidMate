@@ -1,19 +1,15 @@
 .container {
+  direction: flex;
+  flex-direction: column;
   text-align: center;
   padding: 20px;
 }
 
 .image {
-  height: 200px;
+  width: 500px;
 }
 
-.aboutMeUi {
-  margin: 20px 0;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #333;
-}
-
-.aboutMeUi br {
-  margin-bottom: 20px;
+.aboutMe {
+  color: darkblue;
+  font-size: larger;
 }

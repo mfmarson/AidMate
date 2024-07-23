@@ -26,8 +26,9 @@
   cursor: pointer;
   border: none;
   border-radius: 5px;
-  background-color: #0275d8;
+  background-color: #008080;
   color: white;
+  opacity: 0.8;
 }
 
 .button:hover {
