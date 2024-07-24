@@ -1,3 +1,9 @@
+body {
+  background: linear-gradient(to bottom, #f0f8ff, #e0eaff, #d1e2ff, #c2daff);
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
 .formWrapper {
   text-align: center;
   padding: 20px;
@@ -21,18 +27,27 @@
 }
 
 .button {
+  background-color: #000fff;
   padding: 10px 20px;
   font-size: 16px;
-  cursor: pointer;
+  font-weight: bold;
+  color: #ffffff;
   border: none;
   border-radius: 5px;
-  background-color: #008080;
-  color: white;
-  opacity:.8;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button:hover {
-  background-color: #025aa5;
+  background-color: honeydew;
+  color: #000fff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .error {
@@ -42,13 +57,11 @@
 
 .link {
   margin-top: 20px;
-  font-size: 14px;
-  color: #0275d8;
+  font-size: 16px;
+  color: #000fff;
   text-decoration: none;
 }
 
 .link:hover {
   text-decoration: underline;
 }
-
-

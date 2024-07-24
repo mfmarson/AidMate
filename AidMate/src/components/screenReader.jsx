@@ -1,4 +1,4 @@
-// screenReader.js
+
 export function readText(text) {
   if ("speechSynthesis" in window) {
     const utterance = new SpeechSynthesisUtterance(text);

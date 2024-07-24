@@ -22,6 +22,7 @@ import MapComponent from "./routes/MapComponent";
 import Home from "./routes/Home";
 import InfantChoking from "./routes/InfantChoking";
 import AdultChildChoking from "./routes/AdultChildChoking";
+import "./styles/index.css";
 
 const App = () => {
   const { user } = useAuth();
@@ -103,7 +104,6 @@ const App = () => {
 
   const router = createBrowserRouter(routes);
   return <RouterProvider router={router}></RouterProvider>;
-  
 };
 
 export default App;

@@ -1,14 +1,16 @@
-body {
-  background: linear-gradient(to bottom, #f0f8ff, #e0eaff, #d1e2ff, #c2daff);
+body,
+#root {
+  background: linear-gradient(to bottom, #f9fcff, #eaf3ff);
   margin: 0;
   font-family: Arial, sans-serif;
+  height: 1200px;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
+  padding: 10px 20px;
   background-color: rgba(255, 255, 255, 0.9);
   border-bottom: 2px solid #d0d0d0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
@@ -38,17 +40,20 @@ body {
   font-size: 16px;
   font-weight: bold;
   color: #ffffff;
-  background-color: #c9302c;
+  background-color: #e60000;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .firstAidNow:hover {
-  background-color: #a62722;
+  background-color: honeydew;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  color: #000fff;
 }
 
 .menu {
@@ -69,12 +74,15 @@ body {
   padding: 10px 20px;
   display: block;
   border-radius: 5px;
-  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .menuItem a:hover {
-  color: #007bff;
+  color: #e60000;
   background-color: #f0f0f0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -82,7 +90,7 @@ body {
 .notice {
   margin: 20px auto;
   padding: 20px;
-  background-color: #f9f9f9;
+  background-color: #fff8dc;
   border: 1px solid #e0e0e0;
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -92,22 +100,8 @@ body {
 }
 
 .notice strong {
-  color: #c9302c;
-}
-
-.homeWrapper {
-  text-align: center;
-  padding: 20px;
-  background: #ffffff;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.homeLogo {
-  height: 150px;
-  margin-top: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #e60000;
+  margin: 0;
 }
 
 .buttonGroup {
@@ -122,10 +116,14 @@ body {
   border: none;
   border-radius: 5px;
   background: #ffffff;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1), -2px -2px 4px rgba(255, 255, 255, 1);
+  box-shadow:
+    2px 2px 4px rgba(0, 0, 0, 0.1),
+    -2px -2px 4px rgba(255, 255, 255, 1);
   transition: all 0.3s ease;
 }
 
 .buttonGroup button:hover {
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2), -1px -1px 2px rgba(255, 255, 255, 0.8);
+  box-shadow:
+    1px 1px 2px rgba(0, 0, 0, 0.2),
+    -1px -1px 2px rgba(255, 255, 255, 0.8);
 }

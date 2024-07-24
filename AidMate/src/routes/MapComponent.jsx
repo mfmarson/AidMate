@@ -5,6 +5,7 @@ import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder";
 import "mapbox-gl/dist/mapbox-gl.css";
 import "@mapbox/mapbox-gl-directions/dist/mapbox-gl-directions.css";
 import "@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css";
+import styles from "/Users/meganmarson/Repos/AidMate/AidMate/src/routes/modules/MapComponent.module.css";
 
 mapboxgl.accessToken =
   "pk.eyJ1IjoibWZtYXJzb24iLCJhIjoiY2x5cDFmM3plMGduZTJtbjZpb2V4M3YzeSJ9.SO2X7mVFKUcjkGBYodWGVA";
@@ -88,7 +89,6 @@ const MapComponent = () => {
         directionsRef.current.setDestination(result.geometry.coordinates);
       });
 
-      // Hide the input box but keep the dropdown functionality
       const inputElement = document.querySelector(
         ".mapboxgl-ctrl-geocoder--input"
       );
@@ -106,26 +106,37 @@ const MapComponent = () => {
 
   return (
     <>
-      <button type="button" onClick={triggerGeocoder}>
-        Find Nearest Hospital
-      </button>
+      <div className={styles.container}>
+        <h2>Click the button for directions</h2>
+        <button
+          className={styles.button}
+          type="button"
+          onClick={triggerGeocoder}
+        >
+          Find Nearest Hospital
+        </button>
 
-      <p>Click the button to find the nearest hospital and see directions</p>
-      {hospitalName && (
-        <p>
-          <strong>Nearest Hospital:</strong> {hospitalName}
-        </p>
-      )}
-      <div
-        ref={directionsContainerRef}
-        style={{ width: "100%", height: "auto" }}
-      />
-      {showMap && (
+        {hospitalName && (
+          <p>
+            <strong>Nearest Hospital:</strong> {hospitalName}
+          </p>
+        )}
         <div
-          ref={mapContainerRef}
-          style={{ width: "50%", height: "200px", visibility: "hidden" }}
+          ref={directionsContainerRef}
+          style={{
+            width: "100%",
+            height: "auto",
+            display: "flex",
+            justifyContent: "center",
+          }}
         />
-      )}
+        {showMap && (
+          <div
+            ref={mapContainerRef}
+            style={{ width: "50%", height: "200px", visibility: "hidden" }}
+          />
+        )}
+      </div>
     </>
   );
 };

@@ -1,9 +1,10 @@
-import styles from "./modules/Contact.module.css"; // Ensure this path is correct
+import styles from "./modules/Contact.module.css"; 
 
 const Contact = () => {
   return (
     <div className={styles.container}>
-      <h2 className={styles.title}>Contact Us:</h2>
+      <h1 className={styles.feedback}>We love hearing your feedback!</h1>
+      <h2>Contact Us:</h2>
       <p className={styles.email}>megan.marson22@gmail.com</p>
     </div>
   );

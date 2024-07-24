@@ -4,6 +4,7 @@ import { readText } from "../components/screenReader";
 import { useState, useEffect } from "react";
 import { useAuth } from "./AuthContext";
 import supabase from "../supabaseConfig";
+import styles from "/Users/meganmarson/Repos/AidMate/AidMate/src/routes/modules/Aid.module.css";
 
 const Burns = () => {
   const { user } = useAuth();
@@ -54,7 +55,7 @@ const Burns = () => {
       window.speechSynthesis.cancel();
       setaudioPlaying(false);
     } else {
-      const stepsList = document.querySelectorAll(".stepsList li");
+      const stepsList = document.querySelectorAll(`.${styles.stepsList} li`);
       let stepsText = "";
       stepsList.forEach((step) => {
         stepsText += `${step.textContent}. `;
@@ -72,59 +73,69 @@ const Burns = () => {
     window.speechSynthesis.speak(utterance);
   };
 
+  const handleCall = () => {
+
+    window.location.href = "tel:404-520-6112";
+  };
+
   return (
     <>
-      <div className="emergencyButtons">
-        <button type="button">CALL 911</button>
+      <div className={styles.aidInstructions}>
+        <button className={styles.call911} onClick={handleCall} type="button">
+          CALL 911
+        </button>
         <button
+          className={styles.button}
           onClick={handleButtonClick}
-          className="hearButton"
           type="button"
         >
           {audioPlaying ? "Stop" : "Audio Instructions"}
         </button>
 
         <Link to="/MapComponent">
-          <button type="button">Directions to Hospital</button>
+          <button className={styles.button} type="button">
+            Directions to Hospital
+          </button>
         </Link>
       </div>
 
       <h1>Burns</h1>
-      <div>
-        <ul className="stepsList">
-          <li>
-            Cool the Burn: Run cool (not cold) water over the burn for at least
-            10 minutes.
+      <div className={styles.aidInstructions}>
+        <ul className={styles.stepsList}>
+          <li className={styles.stepsLi}>
+            <strong>Cool the Burn:</strong> Run cool (not cold) water over the
+            burn for at least 10 minutes.
           </li>
-          <li>
-            Cover the Burn: Use a sterile, non-adhesive bandage or clean cloth.
+          <li className={styles.stepsLi}>
+            <strong>Cover the Burn:</strong> Use a sterile, non-adhesive bandage
+            or clean cloth.
           </li>
-          <li>
-            Do Not Apply: Do not apply creams, ointments, or ice to the burn.
+          <li className={styles.stepsLi}>
+            <strong>Do Not Apply:</strong> Do not apply creams, ointments, or
+            ice to the burn.
           </li>
-          <li>
-            Seek Help: Call emergency services if the burn is severe or covers a
-            large area.
+          <li className={styles.stepsLi}>
+            <strong>Seek Help:</strong> Call emergency services if the burn is
+            severe or covers a large area.
           </li>
         </ul>
       </div>
-      <div>
+      <div className={styles.aidInstructions}>
         <button
           onClick={addToFavorites}
-          className="favoritesButton"
+          className={styles.button}
           type="button"
         >
           Add to Favorites
         </button>
-        <div>
-          <button
-            onClick={removeFromFavorites}
-            className="favoritesButton"
-            type="button"
-          >
-            Remove From Favorites
-          </button>
-        </div>
+
+        <button
+          onClick={removeFromFavorites}
+          className={styles.button}
+          type="button"
+        >
+          Remove From Favorites
+        </button>
       </div>
     </>
   );

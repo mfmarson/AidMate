@@ -1,16 +1,23 @@
 import { Link } from "react-router-dom";
+import styles from "/Users/meganmarson/Repos/AidMate/AidMate/src/routes/modules/Search.module.css";
 
 const Choking = () => {
   return (
     <>
-      <h1>Who Is Choking?</h1>
-      <Link to="/AdultChildChoking">
-        <button type="button">Adult Or Child</button>
-      </Link>
+      <div >
+        <h1>Who Is Choking?</h1>
+        <Link to="/AdultChildChoking" className={styles.choking}>
+          <button className={styles.aidButton} type="button">
+            Adult Or Child
+          </button>
+        </Link>
 
-      <Link to="/InfantChoking">
-        <button type="button">Infant</button>
-      </Link>
+        <Link to="/InfantChoking" className={styles.choking}>
+          <button className={styles.aidButton} type="button">
+            Infant
+          </button>
+        </Link>
+      </div>
     </>
   );
 };

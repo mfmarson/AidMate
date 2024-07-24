@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { readText } from "../components/screenReader";
 import supabase from "../supabaseConfig";
 import { useAuth } from "./AuthContext";
+import styles from "/Users/meganmarson/Repos/AidMate/AidMate/src/routes/modules/Aid.module.css";
 
 const Bleeding = () => {
   const { user } = useAuth();
@@ -47,12 +48,13 @@ const Bleeding = () => {
       console.error(error);
     }
   };
+
   const handleButtonClick = () => {
     if (window.speechSynthesis.speaking) {
       window.speechSynthesis.cancel();
       setaudioPlaying(false);
     } else {
-      const stepsList = document.querySelectorAll(".stepsList li");
+      const stepsList = document.querySelectorAll(`.${styles.stepsList} li`);
       let stepsText = "";
       stepsList.forEach((step) => {
         stepsText += `${step.textContent}. `;
@@ -70,55 +72,64 @@ const Bleeding = () => {
     window.speechSynthesis.speak(utterance);
   };
 
+  const handleCall = () => {
+   
+    window.location.href = "tel:404-520-6112";
+  };
+
   return (
     <>
-      <div className="emergencyButtons">
-        <button type="button">CALL 911</button>
+      <div className={styles.aidInstructions}>
+        <button className={styles.call911} onClick={handleCall} type="button">
+          CALL 911
+        </button>
         <button
+          className={styles.button}
           onClick={handleButtonClick}
-          className="hearButton"
           type="button"
         >
           {audioPlaying ? "Stop" : "Audio Instructions"}
         </button>
 
         <Link to="/MapComponent">
-          <button type="button">Directions to Hospital</button>
+          <button className={styles.button} type="button">
+            Directions to Hospital
+          </button>
         </Link>
       </div>
       <h1>Bleeding</h1>
-      <div>
-        <ul className="stepsList">
-          <li>
-            Apply Pressure: Use a clean cloth or bandage to apply firm pressure
-            to the wound.
+      <div className={styles.aidInstructions}>
+        <ul className={styles.stepsList}>
+          <li className={styles.stepsLi}>
+            <strong>Apply Pressure:</strong> Use a clean cloth or bandage to
+            apply firm pressure to the wound.
           </li>
-          <li>
-            Elevate: If possible, raise the injured area above heart level.
+          <li className={styles.stepsLi}>
+            <strong>Elevate: </strong>If possible, raise the injured area above
+            heart level.
           </li>
-          <li>
-            Maintain Pressure: Keep applying pressure until the bleeding stops
-            or help arrives.
+          <li className={styles.stepsLi}>
+            <strong>Maintain Pressure: </strong>Keep applying pressure until the
+            bleeding stops or help arrives.
           </li>
-          <li>
-            Do Not Remove: Do not remove any embedded objects; instead, apply
-            pressure around them.
+          <li className={styles.stepsLi}>
+            <strong>Do Not Remove:</strong> Do not remove any embedded objects;
+            instead, apply pressure around them.
           </li>
         </ul>
       </div>
-      <div>
+      <div className={styles.aidInstructions}>
         <button
           onClick={addToFavorites}
-          className="favoritesButton"
+          className={styles.button}
           type="button"
         >
           Add to Favorites
         </button>
-      </div>
-      <div>
+
         <button
           onClick={removeFromFavorites}
-          className="favoritesButton"
+          className={styles.button}
           type="button"
         >
           Remove From Favorites

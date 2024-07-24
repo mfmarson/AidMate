@@ -18,10 +18,10 @@ const SignOut = () => {
   return (
     <>
       <div className={styles.container}>
-        <h1>Thank you for choosing AidMate</h1>
+        <h2>Thank you for choosing AidMate</h2>
         <div>
           <Link to="/Login">
-            <button className={styles.buttonGroup} onClick={handleSignOut}>
+            <button className={styles.button} onClick={handleSignOut}>
               Logout
             </button>
           </Link>

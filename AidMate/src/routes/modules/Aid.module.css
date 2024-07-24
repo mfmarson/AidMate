@@ -14,66 +14,43 @@ body {
   font-family: Arial, sans-serif;
 }
 
-h1 {
-  text-align: center;
-}
-
-.buttonGroup,
-.choking {
+.aidInstructions {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  gap: 10px;
-  margin-bottom: 20px;
-  border-width: 10;
 }
 
-.call,
-.direct {
-  flex: 1;
+.stepsList {
+  list-style-type: decimal;
+}
+
+.stepsLi {
+  margin-bottom: 10px;
+}
+
+.call911 {
   padding: 10px 20px;
   font-size: 16px;
   font-weight: bold;
   color: #ffffff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition:
-    background-color 0.3s ease,
-    box-shadow 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 150px;
-}
-
-.call {
   background-color: #e60000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
 }
 
-.direct {
-  background-color: #000fff;
-}
-
-.call:hover {
+.call911:hover {
   background-color: honeydew;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   color: #000fff;
 }
 
-.direct:hover {
-  background-color: honeydew;
-  color: #000fff;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-.aidGroup {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  row-gap: 30px;
-  column-gap: 20px;
-  text-align: center;
-}
-
-.aidButton {
+.button {
   background-color: #000fff;
   padding: 10px 20px;
   font-size: 16px;
@@ -86,15 +63,13 @@ h1 {
     background-color 0.3s ease,
     box-shadow 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  height: 100px;
-  width: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-decoration: none;
+  margin: 20px;
 }
 
-.aidButton:hover {
+.button:hover {
   background-color: honeydew;
   color: #000fff;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);

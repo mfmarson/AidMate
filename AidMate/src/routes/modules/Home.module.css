@@ -2,7 +2,10 @@ body {
   background: linear-gradient(to bottom, #f9fcff, #eaf3ff);
   margin: 0;
   font-family: Arial, sans-serif;
+  height: 100%;
 }
+
+
 
 .navbar {
   display: flex;
@@ -24,13 +27,8 @@ body {
 }
 
 .logo {
-  height: 80px;
+  height: 180px;
   margin-right: 20px;
-}
-
-.menuContainer {
-  display: flex;
-  align-items: center;
 }
 
 .firstAidNow {
@@ -38,45 +36,20 @@ body {
   font-size: 16px;
   font-weight: bold;
   color: #ffffff;
-  background-color: #3399ff;
+  background-color: #e60000;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .firstAidNow:hover {
-  background-color: #287acc;
+  background-color: honeydew;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-.menu {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.menuItem {
-  margin-left: 10px;
-}
-
-.menuItem a {
-  text-decoration: none;
-  color: #333;
-  font-size: 16px;
-  padding: 10px 20px;
-  display: block;
-  border-radius: 5px;
-  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.menuItem a:hover {
-  color: #007bff;
-  background-color: #f0f0f0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #0000ff;
 }
 
 .homeWrapper {
@@ -84,6 +57,7 @@ body {
   padding: 40px 20px;
   max-width: 900px;
   margin: auto;
+  height:1200px;
 }
 
 .homeLogo {
@@ -106,7 +80,7 @@ body {
 }
 
 .notice strong {
-  color: #b22222;
+  color: #e60000;
 }
 
 .buttonGroup {
@@ -115,32 +89,26 @@ body {
   gap: 10px;
 }
 
-.firstAid, .login {
+.firstAid,
+.login {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.firstAid {
-  background-color: #32cd32;
-  color: white;
-}
-
-.firstAid:hover {
-  background-color: #28a745;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .login {
-  background-color: #d3d3d3;
-  color: #696969;
+  background-color: #0000ff;
+  color: white;
 }
 
 .login:hover {
-  background-color: #c0c0c0;
+  background-color: honeydew;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  color: #0000ff;
 }

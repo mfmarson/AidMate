@@ -1,9 +1,9 @@
-/* eslint-disable no-unused-vars */
 import { Link } from "react-router-dom";
 import { readText } from "../components/screenReader";
 import { useState, useEffect } from "react";
 import { useAuth } from "./AuthContext";
 import supabase from "../supabaseConfig";
+import styles from "/Users/meganmarson/Repos/AidMate/AidMate/src/routes/modules/Aid.module.css";
 
 const AdultChildChoking = () => {
   const { user } = useAuth();
@@ -53,7 +53,7 @@ const AdultChildChoking = () => {
       window.speechSynthesis.cancel();
       setaudioPlaying(false);
     } else {
-      const stepsList = document.querySelectorAll(".stepsList li");
+      const stepsList = document.querySelectorAll(`.${styles.stepsList} li`);
       let stepsText = "";
       stepsList.forEach((step) => {
         stepsText += `${step.textContent}. `;
@@ -71,54 +71,65 @@ const AdultChildChoking = () => {
     window.speechSynthesis.speak(utterance);
   };
 
+  const handleCall = () => {
+    // This could be a placeholder for actual emergency service dialing
+    window.location.href = "tel:404-520-6112";
+  };
+
   return (
     <>
-      <div className="emergencyButtons">
-        <button type="button">CALL 911</button>
+      <div className={styles.aidInstructions}>
+        <button className={styles.call911} onClick={handleCall} type="button">
+          CALL 911
+        </button>
         <button
+          className={styles.button}
           onClick={handleButtonClick}
-          className="hearButton"
           type="button"
         >
           {audioPlaying ? "Stop" : "Audio Instructions"}
         </button>
 
         <Link to="/MapComponent">
-          <button type="button">Directions to Hospital</button>
+          <button className={styles.button} type="button">
+            Directions to Hospital
+          </button>
         </Link>
-        <h1>Adult or Child Choking</h1>
-        <ul className="stepsList">
-          <li>
-            Encourage Coughing: If the person can cough, encourage them to keep
-            coughing.
+      </div>
+
+      <h1>Adult or Child Choking</h1>
+      <div className={styles.aidInstructions}>
+        <ul className={styles.stepsList}>
+          <li className={styles.stepsLi}>
+            <strong>Encourage Coughing:</strong> If the person can cough,
+            encourage them to keep coughing.
           </li>
-          <li>
-            Perform Back Blows: If coughing fails, give 5 firm back blows
-            between the shoulder blades.
+          <li className={styles.stepsLi}>
+            <strong>Perform Back Blows:</strong> If coughing fails, give 5 firm
+            back blows between the shoulder blades.
           </li>
-          <li>
-            Abdominal Thrusts: Stand behind the person, place your fist above
-            their navel, and perform 5 quick upward thrusts.
+          <li className={styles.stepsLi}>
+            <strong>Abdominal Thrusts: </strong>Stand behind the person, place
+            your fist above their navel, and perform 5 quick upward thrusts.
           </li>
-          <li>
-            Repeat: Alternate between 5 back blows and 5 abdominal thrusts until
-            the object is expelled or help arrives.
+          <li className={styles.stepsLi}>
+            <strong>Repeat: </strong> Repeat: Alternate between 5 back blows and
+            5 abdominal thrusts until the object is expelled or help arrives.
           </li>
         </ul>
       </div>
-      <div>
+      <div className={styles.aidInstructions}>
         <button
           onClick={addToFavorites}
-          className="favoritesButton"
+          className={styles.button}
           type="button"
         >
           Add to Favorites
         </button>
-      </div>
-      <div>
+
         <button
           onClick={removeFromFavorites}
-          className="favoritesButton"
+          className={styles.button}
           type="button"
         >
           Remove From Favorites
