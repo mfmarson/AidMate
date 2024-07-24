@@ -117,7 +117,7 @@ const MapComponent = () => {
         </button>
 
         {hospitalName && (
-          <p>
+          <p className={styles.hospitalName}>
             <strong>Nearest Hospital:</strong> {hospitalName}
           </p>
         )}

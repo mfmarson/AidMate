@@ -1,10 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
 import styles from "./modules/About.module.css";
 
-
 const About = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.aboutContainer}>
       <h1 className={styles.aboutAidMate}>About Us</h1>
       <p className={styles.aboutMeUi}>
         The inspiration for AidMate originated from a personal experience

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { supabase } from "../supabaseConfig";
 import { useAuth } from "./AuthContext";
 import styles from "./modules/Dashboard.module.css";
+import { Link } from "react-router-dom";
 
 const Dashboard = () => {
   const { user } = useAuth();
@@ -37,7 +38,9 @@ const Dashboard = () => {
 
   if (!user) {
     return (
-      <h1 className={styles.dashError}>Please login to access the dashboard</h1>
+      <Link to="/login" className={styles.dashError}>
+        Please login to access the dashboard
+      </Link>
     );
   }
 

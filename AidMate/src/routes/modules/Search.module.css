@@ -18,7 +18,35 @@ h1 {
   text-align: center;
 }
 
-.buttonGroup,
+.faButton {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #000fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  border-width: 10;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 .choking {
   display: flex;
   justify-content: center;
@@ -74,6 +102,7 @@ h1 {
 }
 
 .aidButton {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #000fff;
   padding: 10px 20px;
   font-size: 16px;
@@ -85,7 +114,6 @@ h1 {
   transition:
     background-color 0.3s ease,
     box-shadow 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   height: 100px;
   width: 100px;
   display: flex;

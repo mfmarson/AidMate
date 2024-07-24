@@ -24,29 +24,29 @@ const Search = () => {
         <>
           <div className={styles.aidGroup}>
             <Link to="/CPR">
-              <button className={styles.aidButton} type="button">
+              <button className={styles.faButton} type="button">
                 CPR
               </button>
             </Link>
             <Link to="/Choking">
-              <button className={styles.aidButton} type="button">
+              <button className={styles.faButton} type="button">
                 CHOKING
               </button>
             </Link>
             <Link to="/Burns">
-              <button className={styles.aidButton} type="button">
+              <button className={styles.faButton} type="button">
                 BURNS
               </button>
             </Link>
             <Link to="/Bleeding">
-              <button className={styles.aidButton} type="button">
+              <button className={styles.faButton} type="button">
                 BLEEDING
               </button>
             </Link>
-            <button className={styles.aidButton} name="dummy" type="button">
+            <button className={styles.faButton} name="dummy" type="button">
               STROKE
             </button>
-            <button className={styles.aidButton} name="dummy" type="button">
+            <button className={styles.faButton} name="dummy" type="button">
               POISON CONTROL
             </button>
           </div>
