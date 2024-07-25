@@ -7,10 +7,10 @@ const Response = () => {
       <div className={styles.container}>
         <h1>IS THE PERSON RESPONSIVE AND BREATHING?</h1>
         <div className={styles.buttonGroup}>
-          <Link to="/Search">
+          <Link to="/Search" style={{ textDecoration: "none" }}>
             <button className={styles.yes}>YES</button>
           </Link>
-          <Link to="/CPR">
+          <Link to="/CPR" style={{ textDecoration: "none" }}>
             <button className={styles.no}>NO</button>
           </Link>
         </div>

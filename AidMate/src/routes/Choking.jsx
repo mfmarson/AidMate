@@ -6,13 +6,21 @@ const Choking = () => {
     <>
       <div>
         <h1>Who Is Choking?</h1>
-        <Link to="/AdultChildChoking" className={styles.choking}>
+        <Link
+          to="/AdultChildChoking"
+          style={{ textDecoration: "none" }}
+          className={styles.choking}
+        >
           <button className={styles.aidButton} type="button">
             Adult Or Child
           </button>
         </Link>
 
-        <Link to="/InfantChoking" className={styles.choking}>
+        <Link
+          to="/InfantChoking"
+          style={{ textDecoration: "none" }}
+          className={styles.choking}
+        >
           <button className={styles.aidButton} type="button">
             Infant
           </button>

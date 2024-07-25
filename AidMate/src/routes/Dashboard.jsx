@@ -38,7 +38,11 @@ const Dashboard = () => {
 
   if (!user) {
     return (
-      <Link to="/login" className={styles.dashError}>
+      <Link
+        to="/login"
+        style={{ textDecoration: "none" }}
+        className={styles.dashError}
+      >
         Please login to access the dashboard
       </Link>
     );

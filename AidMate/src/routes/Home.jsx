@@ -21,10 +21,10 @@ const Home = () => {
         </p>
       </div>
       <div className={styles.buttonGroup}>
-        <Link to="/Response">
+        <Link to="/Response" style={{ textDecoration: "none" }}>
           <button className={styles.firstAidNow}>First Aid NOW</button>
         </Link>
-        <Link to="/Login">
+        <Link to="/Login" style={{ textDecoration: "none" }}>
           <button className={styles.login}>Login</button>
         </Link>
       </div>

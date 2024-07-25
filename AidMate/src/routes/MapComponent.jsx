@@ -107,6 +107,7 @@ const MapComponent = () => {
     <>
       <div className={styles.container}>
         <h2>Click the button for directions</h2>
+        <p>May take a moment to load</p>
         <button
           className={styles.button}
           type="button"

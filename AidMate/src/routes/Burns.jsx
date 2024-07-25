@@ -91,7 +91,7 @@ const Burns = () => {
           {audioPlaying ? "Stop" : "Audio Instructions"}
         </button>
 
-        <Link to="/MapComponent">
+        <Link to="/MapComponent" style={{ textDecoration: "none" }}>
           <button className={styles.button} type="button">
             Directions to Hospital
           </button>

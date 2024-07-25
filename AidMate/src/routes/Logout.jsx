@@ -20,7 +20,7 @@ const SignOut = () => {
       <div className={styles.container}>
         <h2>Thank you for choosing AidMate</h2>
         <div>
-          <Link to="/Login" className="no-underline">
+          <Link to="/Login" style={{ textDecoration: "none" }}>
             <button className={styles.button} onClick={handleSignOut}>
               Logout
             </button>

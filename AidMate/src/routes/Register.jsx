@@ -42,7 +42,11 @@ const SignUp = () => {
         </button>
       </form>
       {errorMessage && <div className={styles.error}>{errorMessage}</div>}
-      <Link to="/login" className={styles.link}>
+      <Link
+        to="/login"
+        className={styles.link}
+        style={{ textDecoration: "none" }}
+      >
         Already have an account? Login here!
       </Link>
     </div>

@@ -23,22 +23,22 @@ const Search = () => {
         <h2>Select Needed Aid</h2>
         <>
           <div className={styles.aidGroup}>
-            <Link to="/CPR">
+            <Link to="/CPR" style={{ textDecoration: "none" }}>
               <button className={styles.faButton} type="button">
                 CPR
               </button>
             </Link>
-            <Link to="/Choking">
+            <Link to="/Choking" style={{ textDecoration: "none" }}>
               <button className={styles.faButton} type="button">
                 CHOKING
               </button>
             </Link>
-            <Link to="/Burns">
+            <Link to="/Burns" style={{ textDecoration: "none" }}>
               <button className={styles.faButton} type="button">
                 BURNS
               </button>
             </Link>
-            <Link to="/Bleeding">
+            <Link to="/Bleeding" style={{ textDecoration: "none" }}>
               <button className={styles.faButton} type="button">
                 BLEEDING
               </button>
