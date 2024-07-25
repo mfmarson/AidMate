@@ -7,8 +7,9 @@ import "@mapbox/mapbox-gl-directions/dist/mapbox-gl-directions.css";
 import "@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css";
 import styles from "./modules/MapComponent.module.css";
 
+mapboxgl.accessToken = import.meta.env.VITE_MAPBOXGL_ACCESSTOKEN;
+
 const MapComponent = () => {
-  const accessToken = import.meta.env.VITE_MAPBOXGL_ACCESSTOKEN;
   const mapContainerRef = useRef(null);
   const directionsContainerRef = useRef(null);
   const mapRef = useRef(null);
@@ -16,7 +17,7 @@ const MapComponent = () => {
   const [userLocation, setUserLocation] = useState(null);
   const [geocoderRef, setGeocoderRef] = useState(null);
   const [hospitalName, setHospitalName] = useState(null);
-  const [showMap, setShowMap] = useState(true); // State to control map visibility, initialized to true
+  const [showMap, setShowMap] = useState(true);
 
   useEffect(() => {
     if (showMap) {
@@ -44,7 +45,7 @@ const MapComponent = () => {
 
   useEffect(() => {
     const directions = new MapboxDirections({
-      accessToken: accessToken,
+      accessToken: mapboxgl.accessToken,
       unit: "metric",
       profile: "mapbox/driving",
       controls: { inputs: false },
@@ -71,7 +72,7 @@ const MapComponent = () => {
   useEffect(() => {
     if (userLocation) {
       const geocoder = new MapboxGeocoder({
-        accessToken: accessToken,
+        accessToken: mapboxgl.accessToken,
         mapboxgl: mapboxgl,
         placeholder: "Search for a hospital",
         proximity: { longitude: userLocation[0], latitude: userLocation[1] },
