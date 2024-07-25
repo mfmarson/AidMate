@@ -11,7 +11,7 @@ body {
   text-align: center;
   padding: 20px;
   font-family: Arial, sans-serif;
-  background-color: #0275d8;
+  background-color: #0000ff;;
   border-radius: 5px;
   border: 1px #00f solid;
   margin: 70px;
@@ -29,5 +29,5 @@ body {
 .aboutMeUi {
   font-size: 20px;
   /* margin: auto; */
-  background-color: #0275d8;
+  background-color:  #0000ff;;
 }

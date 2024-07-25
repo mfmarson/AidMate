@@ -4,8 +4,8 @@ import styles from "./modules/Search.module.css";
 const Choking = () => {
   return (
     <>
-      <div>
-        <h1>Who Is Choking?</h1>
+      <h1>Who Is Choking?</h1>
+      <div className={styles.choke}>
         <Link
           to="/AdultChildChoking"
           style={{ textDecoration: "none" }}

@@ -14,6 +14,13 @@ body {
   font-family: Arial, sans-serif;
 }
 
+.choke {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
 h1 {
   text-align: center;
 }
@@ -46,13 +53,6 @@ h1 {
   margin-bottom: 20px;
   border-width: 10;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-.choking {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 20px;
-  border-width: 10;
 }
 
 .call,
