@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import styles from "/Users/meganmarson/Repos/AidMate/AidMate/src/routes/modules/Dropdown.module.css";
+import styles from "./Dropdown.module.css";
 
 const Dropdown = ({ options }) => {
   const [isOpen, setIsOpen] = useState(false);
