@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { supabase } from "../supabaseConfig";
 import { useAuth } from "./AuthContext";
-import styles from "./modules/Dashboard.module.css";
+import styles from "../modules/Dashboard.module.css";
 import { Link } from "react-router-dom";
 
 const Dashboard = () => {

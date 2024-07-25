@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import styles from "./src/routes/modules/Response.module.css";
+import styles from "../modules/Response.module.css";
 
 const Response = () => {
   return (

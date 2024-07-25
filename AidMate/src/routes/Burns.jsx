@@ -4,7 +4,7 @@ import { readText } from "../components/screenReader";
 import { useState, useEffect } from "react";
 import { useAuth } from "./AuthContext";
 import supabase from "../supabaseConfig";
-import styles from "./src/routes/modules/Aid.module.css";
+import styles from "../modules/Aid.module.css";
 
 const Burns = () => {
   const { user } = useAuth();

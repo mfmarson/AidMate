@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { readText } from "../components/screenReader";
 import supabase from "../supabaseConfig";
 import { useAuth } from "./AuthContext";
-import styles from "./src/routes/modules/Aid.module.css";
+import styles from "../modules/Aid.module.css";
 
 const Bleeding = () => {
   const { user } = useAuth();

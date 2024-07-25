@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import styles from "./src/routes/Search.jsx";
+import styles from "../modules/Search.module.css";
 
 const Choking = () => {
   return (
