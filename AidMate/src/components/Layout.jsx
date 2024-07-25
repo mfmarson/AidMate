@@ -1,8 +1,6 @@
 import { Link, Outlet } from "react-router-dom";
 import Dropdown from "./Dropdown";
-import styles from "/Users/meganmarson/Repos/AidMate/AidMate/src/routes/modules/Layout.module.css";
-
-
+import styles from "./Layout.module.css";
 
 const Layout = () => {
   const options = [

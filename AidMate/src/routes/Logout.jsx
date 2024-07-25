@@ -1,6 +1,6 @@
 import { useAuth } from "./AuthContext";
 import { useNavigate, Link } from "react-router-dom";
-import styles from "/Users/meganmarson/Repos/AidMate/AidMate/src/routes/modules/Logout.module.css";
+import styles from "src/routes/modules/Logout.module.css";
 
 const SignOut = () => {
   const { signOut } = useAuth();

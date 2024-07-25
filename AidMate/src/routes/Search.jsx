@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import styles from "/Users/meganmarson/Repos/AidMate/AidMate/src/routes/modules/Search.module.css";
+import styles from "src/routes/modules/Search.module.css";
 
 const Search = () => {
   const phoneNumber = "4045206112";

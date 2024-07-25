@@ -5,10 +5,7 @@ import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder";
 import "mapbox-gl/dist/mapbox-gl.css";
 import "@mapbox/mapbox-gl-directions/dist/mapbox-gl-directions.css";
 import "@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css";
-import styles from "/Users/meganmarson/Repos/AidMate/AidMate/src/routes/modules/MapComponent.module.css";
-
-mapboxgl.accessToken =
-  "pk.eyJ1IjoibWZtYXJzb24iLCJhIjoiY2x5cDFmM3plMGduZTJtbjZpb2V4M3YzeSJ9.SO2X7mVFKUcjkGBYodWGVA";
+import styles from "src/routes/modules/MapComponent.module.css";
 
 const MapComponent = () => {
   const mapContainerRef = useRef(null);
