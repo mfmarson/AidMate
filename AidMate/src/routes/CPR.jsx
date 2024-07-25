@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { useAuth } from "./AuthContext";
 import supabase from "../supabaseConfig";
-import styles from "../modules/Aid.module.css";
+import styles from "./modules/Aid.module.css";
 
 const CPR = () => {
   const { user } = useAuth();
