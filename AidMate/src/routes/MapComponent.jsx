@@ -5,7 +5,7 @@ import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder";
 import "mapbox-gl/dist/mapbox-gl.css";
 import "@mapbox/mapbox-gl-directions/dist/mapbox-gl-directions.css";
 import "@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css";
-import styles from "src/routes/modules/MapComponent.module.css";
+import styles from "./src/routes/modules/MapComponent.module.css";
 
 const MapComponent = () => {
   const mapContainerRef = useRef(null);

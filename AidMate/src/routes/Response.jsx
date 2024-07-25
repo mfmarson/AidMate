@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import styles from "src/routes/modules/Response.module.css";
+import styles from "./src/routes/modules/Response.module.css";
 
 const Response = () => {
   return (
@@ -7,10 +7,10 @@ const Response = () => {
       <div className={styles.container}>
         <h1>IS THE PERSON RESPONSIVE AND BREATHING?</h1>
         <div className={styles.buttonGroup}>
-          <Link  to="/Search">
+          <Link to="/Search">
             <button className={styles.yes}>YES</button>
           </Link>
-          <Link  to="/CPR">
+          <Link to="/CPR">
             <button className={styles.no}>NO</button>
           </Link>
         </div>

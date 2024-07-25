@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import styles from "src/routes/Search.jsx";
+import styles from "./src/routes/Search.jsx";
 
 const Choking = () => {
   return (
     <>
-      <div >
+      <div>
         <h1>Who Is Choking?</h1>
         <Link to="/AdultChildChoking" className={styles.choking}>
           <button className={styles.aidButton} type="button">
