@@ -77,43 +77,6 @@ const Dashboard = () => {
         ) : (
           <p>No favorites found</p>
         ))}
-      <h1
-        onClick={() => setShowAccountInfo(!showAccountInfo)}
-        className={styles.dropdownHeader}
-      >
-        Account Information {showAccountInfo ? "▲" : "▼"}
-      </h1>
-      {showAccountInfo && (
-        <table className={styles.infoTable}>
-          <tbody>
-            <tr>
-              <td>
-                <strong>Name:</strong> Tadashi Hamada
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <strong>Email:</strong> {user.email}
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <strong>Phone Number:</strong> 678.867.5309
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <strong>Emergency Contact:</strong> Leah Emmet : 678.990.5998
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <strong>Primary Care Physician:</strong> Dr. Amy Jones
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      )}
     </div>
   );
 };

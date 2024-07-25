@@ -44,10 +44,10 @@ const Search = () => {
               </button>
             </Link>
             <button className={styles.faButton} name="dummy" type="button">
-              STROKE
+              Coming Soon
             </button>
             <button className={styles.faButton} name="dummy" type="button">
-              POISON CONTROL
+              Coming Soon
             </button>
           </div>
         </>
