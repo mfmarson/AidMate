@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div className={styles.homeWrapper}>
       <img
-        src="./src/assets/AidMate-removebg-preview.png"
+        src="./AidMate-removebg-preview.png"
         alt="Logo"
         className={styles.homeLogo}
       />

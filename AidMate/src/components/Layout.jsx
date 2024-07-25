@@ -17,7 +17,7 @@ const Layout = () => {
       <div className={styles.navbar}>
         <div className={styles.logoContainer}>
           <img
-            src="./src/assets/AidMate-removebg-preview.png"
+            src="./AidMate-removebg-preview.png"
             alt="Logo"
             className={styles.logo}
           />

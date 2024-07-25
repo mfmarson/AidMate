@@ -8,6 +8,7 @@ import "@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css";
 import styles from "./modules/MapComponent.module.css";
 
 const MapComponent = () => {
+  const accessToken = import.meta.env.VITE_MAPBOXGL_ACCESSTOKEN;
   const mapContainerRef = useRef(null);
   const directionsContainerRef = useRef(null);
   const mapRef = useRef(null);
@@ -43,7 +44,7 @@ const MapComponent = () => {
 
   useEffect(() => {
     const directions = new MapboxDirections({
-      accessToken: mapboxgl.accessToken,
+      accessToken: accessToken,
       unit: "metric",
       profile: "mapbox/driving",
       controls: { inputs: false },
@@ -70,7 +71,7 @@ const MapComponent = () => {
   useEffect(() => {
     if (userLocation) {
       const geocoder = new MapboxGeocoder({
-        accessToken: mapboxgl.accessToken,
+        accessToken: accessToken,
         mapboxgl: mapboxgl,
         placeholder: "Search for a hospital",
         proximity: { longitude: userLocation[0], latitude: userLocation[1] },
