@@ -38,11 +38,7 @@ const Dashboard = () => {
 
   if (!user) {
     return (
-      <Link
-        to="/login"
-        style={{ textDecoration: "none" }}
-        className={styles.dashError}
-      >
+      <Link to="/login" className={styles.dashError}>
         Please login to access the dashboard
       </Link>
     );
@@ -79,7 +75,7 @@ const Dashboard = () => {
             </tbody>
           </table>
         ) : (
-          <p>No favorites found</p>
+          <p>It looks like you do not have any favorites yet!</p>
         ))}
     </div>
   );
