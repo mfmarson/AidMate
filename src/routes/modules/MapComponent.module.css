@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.hospitalName {
+  font-size: 20px;
+  color: #333;
+}
+
+link {
+  text-decoration: none;
+}
+
+body {
+  background: linear-gradient(to bottom, #f0f8ff, #e0eaff, #d1e2ff, #c2daff);
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.button {
+  background-color: #000fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button:hover {
+  background-color: honeydew;
+  color: #000fff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
